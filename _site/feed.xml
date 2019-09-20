@@ -8,6 +8,37 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Evolving Phishing Attacks Targeting Human Rights Defenders in Middle-East and North Africa</title>
+            <description>&lt;p&gt;As you might have noticed, I’ve recently gone quiet on social media, as well as on this newsletter.  Life and its challenges took the most of me in the last few months. And while stepping away from social media was a great quality-of-life improvement I recommend to everyone, I apologize for the lack of regular content here.&lt;/p&gt;
+
+&lt;p&gt;Many of my previous newsletters have dealt with phishing. This is representative to the current state of digital threats faced by Human Rights Defenders (HRDs). As infecting devices becomes harder, we’ve been observing attackers develop and evolve their tactics at both the “low-tier” as well as the “higher-tier” of attack sophistication. At Amnesty International we track these campaigns of attacks and we are in the process of publishing reports about some of our most recent findings. In the lower tier, phishing remains dominant and as service providers implement mitigations, and security educators promote them, attackers work around them.&lt;/p&gt;
+
+&lt;p&gt;Last December we disclosed a campaign of large-scale targeted phishing attacks capable of systematically bypassing traditional forms of Two-Factor Authentication&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. In March we disclosed a separate campaign of targeted phishing attacks using malicious third-party OAuth applications&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Two days ago we disclosed a renewed campaign, operated by the same attackers as the first, yet again with some evolved tactics:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&quot;&gt;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;OAuth Phishing&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; seems to be an increasingly popular tactic, most likely because of its simplicity as well as because, by nature, it enables attackers to avoid worrying about Two-Factor Authentication. Normally OAuth Phishing is conducted by creating malicious third-party apps that, once authorized to a victim account (for example, a Google or Outlook account), would siphon off all emails and other data. Consequently platform providers have started heavily cracking down on malicious third-party apps, and introducing stricter verification and authorization procedures for third-party apps developers.&lt;/p&gt;
+
+&lt;p&gt;Most likely in response to this, in this latest campaign the attackers have developed a new OAuth Phishing variant technique we had not observed before. Instead of creating malicious third-party apps, they found a way to abuse legitimate Google third-party apps in order to phish for victims accounts. Truthfully, we were quite impressed with the attackers’ craft and ingenuity. I invite you to read the blog post for all the details (and pictures!).&lt;/p&gt;
+
+&lt;h2 id=&quot;some-additional-resources&quot;&gt;Some additional resources&lt;/h2&gt;
+
+&lt;p&gt;Over the last year I have been working on a set of tools to facilitate the identification and reporting of phishing and spearphishing attacks. Currently it is in a closed-beta phase, but if you are a journalist, HRD or part of an NGO, and you are interested in hearing more, please do get in contact with me.&lt;/p&gt;
+
+&lt;p&gt;Lastly, over the last months I have produced a (still under development) Guide to Phishing that is published by Security Without Borders here:
+https://guides.securitywithoutborders.org/guide-to-phishing/
+It goes in to details on how phishing attacks work and what are the available mitigations. I hope you will find it useful. Any contributions are welcome!&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/&quot;&gt;When Best Practice Isn’t Good Enough: Large Campaigns of Phishing Attacks in Middle East and North Africa Target Privacy-Conscious Users&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;Phishing attacks using third-party applications against Egyptian civil society organizations&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://guides.securitywithoutborders.org/guide-to-phishing/oauth-phishing.html&quot;&gt;Guide to Phishing - Security Without Borders&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
+            <link>https://nex.sx//blog/2019/08/23/evolving-phishing-attacks-mena.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2019/08/23/evolving-phishing-attacks-mena.html</guid>
+        </item>
+        
+        <item>
             <title>More on Mobile Security and Device Integrity</title>
             <description>&lt;p&gt;In my previous newsletter&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I comment on the recent news regarding the WhatsApp exploits discovered used by NSO Group and I marginally touch on the difficulties we encounter in confirming infections of mobile devices, particularly because of the tight security mitigations implemented by manufacturers such as Google and Apple.&lt;/p&gt;
 
@@ -376,60 +407,6 @@
             <pubDate>Wed, 24 May 2017 00:00:00 +0200</pubDate>
             <link>https://nex.sx//blog/2017/05/24/manipulation-public-opinion.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2017/05/24/manipulation-public-opinion.html</guid>
-        </item>
-        
-        <item>
-            <title>On the Banality of Attacks and on Mindful Engineering</title>
-            <description>&lt;p&gt;Over the years of my experience assisting journalists and dissidents with matters of computer security, and researching the nature of the threats they face, I learned that those who don’t have access to security solutions and do not operate in a managed environment, are often not best served by the consumer technology they are normally provided with.&lt;/p&gt;
-
-&lt;p&gt;There is a recognizable difference between the design of certain consumer technology and some other. Mobile phones, for example, are increasingly provided with operating systems that are designed — for the most part, at least — around the interests of end-users. Other technology, like personal computer’s operating systems, seem to be often designed around the interests of the Enterprise sector instead. It really depends on what appears to be the primary target market for the producer.&lt;/p&gt;
-
-&lt;p&gt;To me, this is signified by the fact that among the many — and I mean, really a lot of — attacks that I have observed targeting members of civil society, the use of exploits is a rare sight. Mind, not just zero-day exploits, but even just exploits at all. The large majority of attacks that I observe leverage tricks as infection vectors that are very simply (ab)using features that are exposed by the operating system or mainstream consumer software, and that seem to be mostly intended for enterprise users. Rather than a lack of sophistication on the part of the state-sponsored actors orchestrating these attacks, I believe this rather indicates a dire state of overall security controls.&lt;/p&gt;
-
-&lt;p&gt;There are definitely tactical advantages in using tricks rather than exploitation. For example, abusing features exposed by operating systems like Microsoft Windows or by primary consumer applications like Microsoft Office, or Adobe Reader, requires way less situational awareness. Attackers do not need to know which architecture, build, or version of the particular software targets use, and as such there is no need to spend resources and time crafting attacks that must be reliable. This is particularly true when the target of an attacker is a diverse demographic that does not operate within an uniformed technology stack as it generally is in corporate and government environments. Additionally, while attackers often look for that one weak entry point to exploit in the operations of corporations or government institutions, the targeting of activist and dissident groups is often opportunistic — except, of course, of some individuals who are of particular interest — and attackers seek instead to just compromise as many people as possible. As a matter of fact, it is common to see the same spearphishing email being sent in carbon copy to dozen of individuals, even working for different organizations.&lt;/p&gt;
-
-&lt;p&gt;For these reasons, targeting activists, journalists, and dissidents using tricks is very likely way less expensive than using exploits, and might in fact result in a higher success rate. Consequently, this is driving up the numbers of attacks we witness.&lt;/p&gt;
-
-&lt;p&gt;The most common vectors for spearphishing attacks that I’ve observed in the last year involved the abuse either of Microsoft Office Macros and Packager Shell Objects, or the abuse of PowerShell or Windows Script Host. With perhaps the exception of Macros for Excel, all the remaining tricks are powered by features that are generally useless to regular users, and are rather thought for the Enterprise sector.&lt;/p&gt;
-
-&lt;p&gt;For some of them, I can’t even think of any reasonable legitimate use. For example: why should one be able to embed Windows executables inside a PowerPoint title slide and automatically launch them through a custom animation? &lt;em&gt;(Insert here a dozen more implicit question and exclamation marks.)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I understand. A lot has to do with enabling system administrators and software developers to automate some of their tasks. Yes, I am sure that PowerShell is great at that. I am also sure it is great for facilitating incident response in corporate environments. However, please don’t make those default options (or in the case of PowerShell, for example, no option at all). Organizations can provision the configuration they prefer, end users instead have to stick with what they’re given. I am all for rich features and plenty of possibilities, but I am also for security by default, not by choice.&lt;/p&gt;
-
-&lt;p&gt;Let me now demystify some of the most common responses I get when similarly ranting about these particular issues.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;“There is Antivirus software, they detect all that”&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;Firstly, no. Secondly, any security design that relies on the efficacy of third party products that your user must discover and acquire is a ridiculous one.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;“Users should learn not to click on unsolicited links and attachments”&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;Links and attachments are supposed to be clicked. It’s the whole point. If you expect users to be able to discriminate naturally between a legitimate email and a malicious one, you are detached from the reality of real world attacks. Attackers commonly befriend victims, impersonate their relatives and co-workers, and create all the pre-conditions to make the attack as credible as possible.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;“Users are warned when they are about to execute something dangerous”&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;div style=&quot;float: left;padding-right: 20px;padding-bottom: 5px;&quot;&gt;&lt;img src=&quot;/assets/blog/20170111/warning.png&quot; /&gt;&lt;/div&gt;
-
-    &lt;p&gt;That’s not always the case, but it is for some applications. However, it is also clear that vague, undescriptive warnings — like the one displayed on the side — are not enough. For example, in the case of some targeted attacks against dissidents in Iran my co-conspirator Collin and I have documented last year, the malware was delivered through malicious PowerPoint presentations that embedded multiple copies of the same executable in the title slide and launched it in the same way I described earlier. Why multiple copies? Because while at the first, or second, or third security warning dialog from Microsoft Office the victim might not allow the payload to execute, they most likely will at the fourth or fifth. We formalized this technique as Security Bypass by Annoyance.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;“Even if you disable one feature or another, there’s so many ways to compromise someone”&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;True. It still doesn’t mean however that we should leave all doors open. Reducing the number of possible attack points allows us to deal and watch for the fewer remaining ones more efficiently.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To this effect, my dear friend emdel and I at Security Without Borders have started aggregating tips &amp;amp; tricks to disable some of these most problematic features in a little experimental utility that is being assembled here.&lt;/p&gt;
-
-&lt;p&gt;In conclusion, I invite software producers — especially those who provide highly popular consumer applications — to stay informed on how some of their choices are being regularly abused, to stop blaming users, and to start practicing more mindful engineering.&lt;/p&gt;
-</description>
-            <pubDate>Wed, 11 Jan 2017 00:00:00 +0100</pubDate>
-            <link>https://nex.sx//blog/2017/01/11/on-banality-of-attacks.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2017/01/11/on-banality-of-attacks.html</guid>
         </item>
         
     </channel>
