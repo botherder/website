@@ -8,6 +8,70 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>What am I doing at Amnesty International?</title>
+            <description>&lt;p&gt;Several years ago I joined Amnesty International as the very first technologist in a nearly new born Technology &amp;amp; Human Rights team. Today, our team has evolved into a dedicated program called Amnesty Tech, nearly 20 people strong, almost half of which are technologists.&lt;/p&gt;
+
+&lt;p&gt;Especially at the beginning, I would be frequently asked what a security researcher such as myself does at Amnesty International. Years later, I realized I never really explained that in details, and I never took the opportunity to tell what we collectively do now. Despite having thus far mostly operated out of the spotlights, I believe our work is remarkable and unique, so I figured I would use this newsletter to explain it.&lt;/p&gt;
+
+&lt;p&gt;At the moment, our program primarily splits between a team tackling emerging technologies (such as machine learning, facial recognition, as well as social media economics) and a team that instead focuses on digital security of Human Rights Defenders (HRDs). I will speak to the latter, as I primarily contribute to that.&lt;/p&gt;
+
+&lt;p&gt;This team consists of technologists currently based in Berlin, Tunis, Beirut, Dakar and Nairobi. Along with other researchers and advisors in our team, we try to tackle the growing threat of digital surveillance against HRDs through various means, primarily:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Investigate, Expose and Disrupt Illegitimate Surveillance&lt;/li&gt;
+  &lt;li&gt;Build Networks and Mentor Human Rights Defenders&lt;/li&gt;
+  &lt;li&gt;Create Tools and Services to Support Individuals at Risk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Why Amnesty?&lt;/p&gt;
+
+&lt;p&gt;While a large human rights organization can be an heavy and slow machinery to work with, doing this work at Amnesty comes with some precious benefits. Firstly, we operate free from any governmental influences (oddly, an uncommon privilege). Secondly, we get to work outside of the schemes of “Digital Rights” or “Internet Freedom”, which I find by definition to be extremely insulating, and fundamentally Western. We work through the lense of “Human Rights”, in law and in principle, which is a lot more empowering, and speaks to a much wider audience. Lastly, and most importantly, we can count on many colleagues from all over the world who are connected and trusted by those communities we often find targeted with digital attacks. My colleagues’ such diverse set of skills, backgrounds, and locations, is a rare asset.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s get into some more details.&lt;/p&gt;
+
+&lt;h2 id=&quot;investigate-expose-and-disrupt-illegitimate-surveillance&quot;&gt;Investigate, Expose and Disrupt Illegitimate Surveillance&lt;/h2&gt;
+
+&lt;p&gt;The Berlin office hosts our Security Lab, of which I’m the Head. It’s a small team that conducts most of our technical investigation on digital surveillance against civil society. Here, we work closely with our colleagues from the offices around the world in order to support them in cases of emergency, and together discover and investigate threats affecting their respective regions. The majority of our technologists are talented trainers, community organizers, and researchers from the Global South.&lt;/p&gt;
+
+&lt;p&gt;Having technologists familiar with the language, the culture, as well as the relevant threats in their regions is instrumental for us to identify global trends, as well as to collectively develop proper technology and security education material pertinent for the local HRDs at risk. Many of the tools and guides available today tend to be very Western-centric, and are not necessarily as applicable in other regions. As a truly global team, we learn from each other and invest more effectively our time and resources.&lt;/p&gt;
+
+&lt;p&gt;Sometimes we publish details on the campaigns of targeted attacks we come across, especially when we believe we can share useful insights and perhaps raise awareness of particular attacks that might not be commonly understood. (I included at the bottom of this newsletter a list of some of the research we published.) However, publishing is not our primary objective: we don’t want our research to be exclusively an opportunity for media attention, but to result in tangible benefit to the HRDs and NGOs we work with. Therefore, the knowledge we build on global digital threats against civil society directly feeds into other activities and projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;build-networks-and-mentor-human-rights-defenders&quot;&gt;Build Networks and Mentor Human Rights Defenders&lt;/h2&gt;
+
+&lt;p&gt;In some of the places we operate, networks of technologists are still lacking. Building a resilient civil society requires connecting people, creating networks, and have communities talk to each other. As technologists working for a large Human Rights organisation like Amnesty, we are very uniquely well placed to facilitate these connections and foster their development. Some of my colleagues do incredible work on this aspect: my colleague Sadibou, for example, dedicates a lot of his time to the creation of a network of techies in West Africa (https://www.amnesty.org/en/latest/research/2019/04/amnesty-tech-secure-squad/).&lt;/p&gt;
+
+&lt;p&gt;Security trainings represented a common practice in civil society for a long time. However, because of logistical constraints, trainings often tend to be occasional, standardized, and hardly locally contextualized. We decided to take on a new approach, and &lt;em&gt;mentor&lt;/em&gt; rather than &lt;em&gt;train&lt;/em&gt;. Some of our technologists nurture long-term mentorships of individuals and organisations in their respective regions, and help them learn not just how to use this or that tool, but how to think and practice digital security. Our hope is to obtain a long lasting impact, rather than an immediate excitement that generally fades away quick.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-tools-and-services-to-support-individuals-at-risk&quot;&gt;Create Tools and Services to Support Individuals at Risk&lt;/h2&gt;
+
+&lt;p&gt;Over the many years working in this space I observed (and personally contributed to) an almost exclusive attention to research &amp;amp; publishing, and very little to &lt;em&gt;building security&lt;/em&gt;. Although the media started paying attention to it, the difficult state of civil society’s digital security capacity barely improved.&lt;/p&gt;
+
+&lt;p&gt;I don’t intend to talk here about the technological ecosystem of this space, as it would require a much longer newsletter of its own (and if there is an interest, I’d be happy to write one - let me know!), but to boil it down to the core issue: Human Rights Defenders face threats similar to large corporates and governments, and at a much higher personal cost, but are only equipped with consumer-grade technology. There is a fundamental asymmetry that significantly disadvantages civil society, which tends to be relegated at the margins of conversations on cybersecurity.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, tackling this asymmetry is tricky because civil society is not a target market for the information security industry, and because of lacking financial resources. Additionally, the particular traits of typical civil society groups don’t lend well to appropriate security modeling. There is no provisioning of hardware, software or services, therefore the norm is BYO* (Bring Your Own Everything, as I call it), opening little possibilities for centralized control and monitoring. It is hard to detect attacks in these conditions, and so far we mostly managed through conversations rather than with technology.&lt;/p&gt;
+
+&lt;p&gt;For how inadequate this situation is, I believe it creates interesting opportunities for thinking about security differently, re-adapting concepts that might seem trivial in corporate space, but that could make a significant difference in civil society. We need to be creative and bold in re-inventing some wheels.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the reports we have published so far:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@AmnestyInsights/beyond-fake-news-an-investigation-into-the-murky-world-of-fake-campaigns-f4af8118844b&quot;&gt;Beyond fake news: an investigation into the murky world of fake campaigns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/amnesty-insights/operation-kingphish-uncovering-a-campaign-of-cyber-attacks-against-civil-society-in-qatar-and-aa40c9e08852&quot;&gt;Operation Kingphish: Uncovering a Campaign of Cyber Attacks against Civil Society in Qatar and Nepal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2017/03/False-Friends-Spearphishing-of-Dissidents-in-Azerbaijan/&quot;&gt;False Friends: How Fake Accounts and Crude Malware Targeted Dissidents in Azerbaijan | Amnesty International&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/documents/asa33/8366/2018/en/&quot;&gt;Pakistan: Human rights under surveillance | Amnesty International&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/&quot;&gt;Amnesty International Among Targets of NSO-powered Campaign | Amnesty International&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/&quot;&gt;When Best Practice Isn’t Good Enough: Large Campaigns of Phishing Attacks in Middle East and North Africa Target Privacy-Conscious Users | Amnesty International&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;Phishing attacks using third-party applications against Egyptian civil society organizations | Amnesty International&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&quot;&gt;Evolving Phishing Attacks Targeting Journalists and Human Rights Defenders from the Middle-East and North Africa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            <pubDate>Sun, 22 Sep 2019 00:00:00 +0200</pubDate>
+            <link>https://nex.sx//blog/2019/09/22/what-am-i-doing-at-amnesty-international.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2019/09/22/what-am-i-doing-at-amnesty-international.html</guid>
+        </item>
+        
+        <item>
             <title>Evolving Phishing Attacks Targeting Human Rights Defenders in Middle-East and North Africa</title>
             <description>&lt;p&gt;As you might have noticed, I’ve recently gone quiet on social media, as well as on this newsletter.  Life and its challenges took the most of me in the last few months. And while stepping away from social media was a great quality-of-life improvement I recommend to everyone, I apologize for the lack of regular content here.&lt;/p&gt;
 
@@ -354,59 +418,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Wed, 05 Dec 2018 00:00:00 +0100</pubDate>
             <link>https://nex.sx//blog/2018/12/05/nso-group-and-surveillance-of-saudi-dissidents.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2018/12/05/nso-group-and-surveillance-of-saudi-dissidents.html</guid>
-        </item>
-        
-        <item>
-            <title>Manipulation of Public Opinion</title>
-            <description>&lt;p&gt;Manipulation of public opinion clearly isn’t anything new. It has traditionally been achieved by repeating over and over a specific message in the public and to the media to install a particular narrative that serves one’s interests. This commonly manifests with catchphrases which, just like commercial advertisement, are repeated endlessly until they become permanently ingrained in the public consciousness. We’ve seen it for example with the “blood on his hands” rhetoric being used against Snowden and Manning in the last years. We’re seeing it recently in the UK with “coalition of chaos” being used by the conservatives to refer to the opposition. And we’ve seen countless examples of that also by Trump during the 2016 campaign.&lt;/p&gt;
-
-&lt;div class=&quot;quote&quot;&gt;The public is fundamentally a consumer of political advertisement.&lt;/div&gt;
-
-&lt;p&gt;Social media has become an extension of this. Today’s Internet economic incentives foster an environment of clickbait and instant gratification, originally leveraged for online advertisement and moneymaking, but that it turns out is perfect too for catchphrase politics, particularly in a moment of resurgence of demonizing politics.&lt;/p&gt;
-
-&lt;p&gt;With social media increasingly becoming a primary platform for the consumption of information, it also clearly has become a field where propaganda and misinformation campaigns play out. But the Internet doesn’t exist in a vacuum, it’s quite simply a reflection of society, with all good and bad that comes with it.&lt;/p&gt;
-
-&lt;p&gt;With much talk of fake news (which quite frankly, is a term that I believe should be abandoned, because it is imprecise and unhelpful for a constructive debate) and of social media bots, I think we’re seeing a concerning trend towards a techno-fatalism, that finds in technology a scapegoat for significant societal issues (as we’ve seen time and time again with the introduction in society of a new technology), and that as a result invokes some kind of techno-solutionism, which is just as problematic.&lt;/p&gt;
-
-&lt;p&gt;We are seeing some movements towards the over-regulation of content online. For example in Germany, where a law was passed that enforces fines of tens of millions of euros to companies who fail to enforce some appropriate and timely filtering of content and countering of “fake news”.&lt;/p&gt;
-
-&lt;p&gt;These are complex phenomena that require deep and dedicated study to fully understand. There is no solid indication yet of what is the measured impact (for example on elections) of false news and Twitter bots, and while they might very well have some, it is imperative that before implementing further laws and controls we have a good and documented view of what is the nature of this problem.&lt;/p&gt;
-
-&lt;p&gt;These issues need to be analyzed in the geographical and socio-political context in which they manifest. The impact of such phenomena will differ between countries that implement repressive policies with serious dangers involved in political manifestation, and say countries with a strong respect for the rule of law and human rights. These differences might warrant different reactions and countermeasures.&lt;/p&gt;
-
-&lt;div class=&quot;quote&quot;&gt;Firstly, it is reassuring to know that humans still lead the political debate.&lt;/div&gt;
-
-&lt;p&gt;On the matter of misinformation campaigns, Facebook recently stated for example that: “while we acknowledge the ongoing challenge of monitoring and guarding against information operations, the reach of known operations during the US election of 2016 was statistically very small compared to overall engagement on political issues.”&lt;/p&gt;
-
-&lt;p&gt;A study by Stanford University comes to similar conclusions, and professor and co-author Matthew Gentzkow commented that “a reader of our study could very reasonably say, based on our set of facts, that it is unlikely that fake news swayed the election” and that “social media was an important but not dominant source of news in the run-up to the election”.&lt;/p&gt;
-
-&lt;p&gt;In regards to the French elections, Oxford University published a paper that assessed the distribution of news over social media in the run-up to the first round and found that “the largest proportion of content being shared by Twitter users interested in French politics comes from professional news organizations. Information from political parties, government agencies and other experts is also being used. Still, 19.6 percent of the content being shared involves other kinds of political news and information. Yet the largest proportion of that content is not junk news but citizen-generated content”.&lt;/p&gt;
-
-&lt;p&gt;And not only that, but that in regards to Twitter bots “by candidate, it appears that most of the candidates have roughly the same number of highly automated accounts generating traffic about them.”
- And yet this automated traffic amounted to roughly 7% of the total, according to the researchers at Oxford.&lt;/p&gt;
-
-&lt;p&gt;All this is to say that we need to step back a little and look at it with perspective in order to find appropriate and proportionate solutions that promote and respect the right to freedom of expression.&lt;/p&gt;
-
-&lt;p&gt;A response driven by anxiety and panic is unlikely to be a constructive one and we don’t want to end up in a place where companies, instead of courts and the public opinion, are entitled to decide what is rightful content and what isn’t, and by extension we do not want to create regimes of over-censorship, because it is not by filtering that we solve bigotry and racism. Additionally, we might not realize that, while implementing certain restrictions or controls over some technology that might seem threatening to us, we might cause an unintended impact on the lives of others in other parts of the world. For example, a crack down on the right to anonymity online and enforcing service providers to police that, will necessarily mean for example that some human rights defenders in another country will not be able to do their work safely.&lt;/p&gt;
-
-&lt;p&gt;That said, it is important that the public is well informed and it is not deceived. When we’ll get to the point where social media will be in fact the primary source of news, and by my reading it doesn’t seem to be there quite yet, the real answer to these issues will be education and media literacy.&lt;/p&gt;
-
-&lt;div class=&quot;quote&quot;&gt;Technology can’t be “trusted”, technology needs to be understood.&lt;/div&gt;
-
-&lt;p&gt;And we need to make sure that especially generations to come will be prepared to enter in their political life with the right understanding of how technology works, of how media and social media work and how they can be influenced, and to make sure they are taught the value of, and equipped with ways to actively seek diverse and accurate information.
- And that is not just in response to the issue of misinformation and propaganda, but really it is simply a requirement for nurturing open minds.&lt;/p&gt;
-
-&lt;p&gt;There are however some considerations that need to be asked to ensure technology and the Internet can contribute positively, rather than negatively, to society.&lt;/p&gt;
-
-&lt;p&gt;Firstly, we need to re-think online advertisement, which besides being a toxic market that is corrosive to the right to privacy, it is also a key enabler of the twisted dynamics that I just spoke about. It is online advertisement after all that is the primary cause of clickbaiting, with all the consequences that it brings.&lt;/p&gt;
-
-&lt;p&gt;Secondly we need to engage the tech giants and require an opening of their systems for algorithmic decision making. We just can not rely on systems that select, prioritize and carry information that operate in ways that are cloaked by trade secrets. Even if those algorithmic decisions might not be an immediate issue now, they very likely will be in the future and, as we know, rolling back technologies that have been in place for years is just too hard, and we instead should make sure we build them with all the ethical and social considerations in mind from the very beginning.&lt;/p&gt;
-
-&lt;div class=&quot;footnote&quot;&gt;This text is adapted from my speech at re:publica 2017 in conversation with Garry Kasparov.&lt;/div&gt;
-</description>
-            <pubDate>Wed, 24 May 2017 00:00:00 +0200</pubDate>
-            <link>https://nex.sx//blog/2017/05/24/manipulation-public-opinion.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2017/05/24/manipulation-public-opinion.html</guid>
         </item>
         
     </channel>
