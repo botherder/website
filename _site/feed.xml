@@ -8,6 +8,77 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Moroccan Human Rights Defenders Targeted with NSO Group's Spyware</title>
+            <description>&lt;p&gt;At this point, this is almost not surprising. Pegasus, the spyware product from the infamous Israeli company NSO Group, has by now been found used against human rights defenders (including a colleague of mine at Amnesty), journalists and dissidents from UAE, Mexico, Saudi Arabia, and now Morocco, as we tell in our latest report:&lt;/p&gt;
+
+&lt;p&gt;English: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware&quot;&gt;https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware&lt;/a&gt;&lt;br /&gt;
+French: &lt;a href=&quot;https://www.amnesty.org/fr/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware&quot;&gt;https://www.amnesty.org/fr/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware&lt;/a&gt;&lt;br /&gt;
+Arabic: &lt;a href=&quot;https://www.amnesty.org/ar/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware&quot;&gt;https://www.amnesty.org/ar/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It seems to me that NSO Group is racking up maybe even more documented cases of abuse of their products than other companies, such as FinFisher or HackingTeam, did in the past. Although companies’ conduct and lack of due diligence contributes to this worrying trend, it is rather symptomatic of the ecosystem of industrialized government hacking which has been flowrishing in recent years.&lt;/p&gt;
+
+&lt;p&gt;In this latest report we detail how Maati Monjib and Abdessadak El
+Bouchattaoui, respectively a prominent activist and academic and a well-known human rights lawyer, have been targeted using NSO Group’s Pegasus spyware from 2017 onwards. In both cases we collected several malicious SMS messages carrying links to known NSO infrastructure.&lt;/p&gt;
+
+&lt;h2 id=&quot;social-engineering-is-a-craft&quot;&gt;Social Engineering is a Craft&lt;/h2&gt;
+
+&lt;p&gt;Similarly to previous cases, the messages attempt to lure victims through social engineering. At times the messages are political. For example, one message sent to Maati translates like following:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Jerusalem will remain the capital of Palestine! Save the holy city by signing this petition: [exploit link]”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;More often, messages are designed to appear just like any other spam SMS victims might be used to receive. For example, the following text pretends to be a special offer from a large gym chain in Morocco:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“BlackFriday continues exceptionally today at CityClub! Last chance to get 15 months of fitness at 1633!&lt;br /&gt;
+Tomorrow it will be too late&lt;br /&gt;
+STOPSMS: [exploit link]”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Interestingly, in multiple occasions the attackers sent the same text in repetition to purposefully simulate spam, irritate targets and, as shown above, offer the malicious link as an option to stop receiving such SMS messages. Nice trick.&lt;/p&gt;
+
+&lt;p&gt;Finding SMS messages such as this is a rare opportunity. Researchers seem to have so far only gathered evidence of such messages sent until about a year ago. It is possible NSO Group has since shifted tactics and realized SMS messages are too noisy and leave too many traces, and have instead invested in alternative attack vectors. Without knowing precisely what or how many 0day vulnerabilities can NSO rely on, determining a pattern of tactics is hard. For example, in 2019 NSO customers might have made large use of particular exploits (for example for WhatsApp or iMessage) as they became available. However, in 2020 the attack surface and the available capabilities might already look very different.&lt;/p&gt;
+
+&lt;p&gt;Through the course of this investigation, we found evidence that might indeed suggest NSO Group has some more cards up its sleeve.&lt;/p&gt;
+
+&lt;h2 id=&quot;network-injection-attacks&quot;&gt;Network Injection Attacks&lt;/h2&gt;
+
+&lt;p&gt;While analyzing Monjib’s phone, we noticed a few suspicious web visits in his Safari browsing history that originated from clear-text initial connections to, for example, &lt;code class=&quot;highlighter-rouge&quot;&gt;http://yahoo.fr&lt;/code&gt; and in less than 3ms redirected to URLs like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hxxps://bun54l2b67.get1tn0w.free247downloads[.]com:30495/szev4hz&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;(Note: the URL is edited with hxxps:// and [.] to avoid accidental clicks.)&lt;/p&gt;
+
+&lt;p&gt;In one occasion, few seconds after this visit, a suspicious process spawned and all the folders containing app crash logs appear to have been wiped. Crash logs (which you can view directly from the phone navigating to Settings &amp;gt; Privacy &amp;gt; Analytics &amp;gt; Analytics Data) contain details about application crashes, and in the case of exploitation would proove useful to identify the abused vulnerability. An attacker would definitely have an interest in making sure such logs wouldn’t be available to security researchers or to Apple, in order to prevent the bug from being patched. These logs are normally stored indefinitely unless the iPhone is &lt;em&gt;synced&lt;/em&gt; with iTunes, and we believe that the deletion from Monjib’s phone right after what appears to be a malicious web redirect is evidence of what might be a &lt;strong&gt;network injection attack&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;What exactly happened?&lt;/p&gt;
+
+&lt;p&gt;If our theory is correct, Monjib tried to visit &lt;code class=&quot;highlighter-rouge&quot;&gt;yahoo.fr&lt;/code&gt; in order to access his mailbox from the phone, but his Internet connection was being monitored and automatically hijacked whenever he would visit an unencrypted web page (in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;http://yahoo.fr&lt;/code&gt;, but it could be any website without TLS) in order to inject a redirect and force Monjib’s Safari to visit an exploitation server. If successful, the exploitation server would leverage a vulnerability in Safari and ultimately install the spyware.&lt;/p&gt;
+
+&lt;p&gt;The exploitation process would be the same as by sending malicious links via SMS, but through these automatic network redirects the attackers do not have to rely on successfully luring the victim into clicking on the links, but it happens programmatically.&lt;/p&gt;
+
+&lt;p&gt;Therefore, this attack vector is way more reliable and leaves virtually no  traces visible to the victims. Because of this, network injections are also very hard to and identify, document and, especially, reproduce.&lt;/p&gt;
+
+&lt;p&gt;This form of attack is not new. FinFisher and HackingTeam, for example, also soffered similar capabilities to their customers (with FinFly ISP&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and Infection Proxy respectively&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;). A leaked brochure from NSO Group also details this capability in what they call a “Tactical Network Element”&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;These cases of abuse are not isolated incidents, but they are establishing a, by now, very well documented pattern. Although less sophisticated attack platforms, such as phishing and commodity malware, represent a quantitavely larger threat to civil society, more sophisticated options such as Pegasus are a product of choice of more resourceful and determined attackers.&lt;/p&gt;
+
+&lt;p&gt;I worry it will become increasingly harder to detect and defend from these attacks. In this cat and mouse game, consumer technology vendors have to invest in hardening their products particularly in light of the reality that they are equally used by regular users as well as at-risk individuals. Ultimately, as these attacks become harder to develop, increasing their economic cost is critical to reduce instances of abuse. In the meantime, even UN officials are demanding a moratorium on the sale of surveillance technology in order to contrast these human rights violations&lt;sup id=&quot;a4&quot;&gt;&lt;a href=&quot;#f4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://wikileaks.org/spyfiles4/documents/FinFly-ISP-Catalog.pdf&quot;&gt;https://wikileaks.org/spyfiles4/documents/FinFly-ISP-Catalog.pdf&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://wikileaks.org/hackingteam/emails/fileid/595666/274112&quot;&gt;https://wikileaks.org/hackingteam/emails/fileid/595666/274112&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://www.documentcloud.org/documents/4599753-NSO-Pegasus.html&quot;&gt;https://www.documentcloud.org/documents/4599753-NSO-Pegasus.html&lt;/a&gt; 
+&lt;span id=&quot;f4&quot;&gt;&lt;/span&gt;4: &lt;a href=&quot;https://news.un.org/en/story/2019/06/1041231&quot;&gt;https://news.un.org/en/story/2019/06/1041231&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Thu, 10 Oct 2019 00:00:00 +0200</pubDate>
+            <link>https://nex.sx//blog/2019/10/10/morocco-hrds-targeted-nso-group-spyware.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2019/10/10/morocco-hrds-targeted-nso-group-spyware.html</guid>
+        </item>
+        
+        <item>
             <title>What am I doing at Amnesty International?</title>
             <description>&lt;p&gt;Several years ago I joined Amnesty International as the very first technologist in a nearly new born Technology &amp;amp; Human Rights team. Today, our team has evolved into a dedicated program called Amnesty Tech, nearly 20 people strong, almost half of which are technologists.&lt;/p&gt;
 
@@ -372,52 +443,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Thu, 20 Dec 2018 00:00:00 +0100</pubDate>
             <link>https://nex.sx//blog/2018/12/20/phishing-2fa-and-false-myths.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2018/12/20/phishing-2fa-and-false-myths.html</guid>
-        </item>
-        
-        <item>
-            <title>NSO Group and the Surveillance of Saudi Dissidents</title>
-            <description>&lt;p&gt;NSO Group, the infamous Israeli surveillance company, has been under a lot of fire recently. If you remember, in August we published a report&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in which we detailed how one of our staff members at Amnesty International (who was working on the issue of the Saudi women activists arrested&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;) was targeted using the mobile surveillance suite Pegasus, sold by NSO. In that report we also mentioned a Saudi human rights defender who we discovered also being targeted, whom identity we didn’t reveal at his request. Since then, he spontaneously decided to identify himself in the press as Yahya Assiri.&lt;/p&gt;
-
-&lt;p&gt;While at the time we discovered these attacks in early June they seemed like isolated events, over the months it became obvious that a larger campaign of surveillance was being conducted (most likely by the Saudi government) in a coordinated attempt to suppress dissent that culminated with the murder of Jamal Khashoggi.&lt;/p&gt;
-
-&lt;p&gt;On October 1st, right before the news of the murder, Citizen Lab discovered another Saudi dissident based in Canada, Omar Abdulaziz, was also targeted with NSO Group’s spyware&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. In November, Forbes reported that yet another Saudi dissident, the YouTube comic and satirist Ghanem Almasarir, was also targeted with Pegasus&lt;sup id=&quot;a4&quot;&gt;&lt;a href=&quot;#f4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;In October, we released a list&lt;sup id=&quot;a5&quot;&gt;&lt;a href=&quot;#f5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; of more than 600 domains used to deliver NSO Group’s exploits through SMS or WhatsApp messages. Recently we have also announced that we’re demanding for NSO Group’s export license to be revoked and we are considering legal action against the company&lt;sup id=&quot;a6&quot;&gt;&lt;a href=&quot;#f6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;. Few days ago, Omar Abdulaziz also announced that he’s suing NSO Group in connection with the infection of his device, which he claims was purposefully targeted by the Saudi authorities to snoop on his communications with Khashoggi&lt;sup id=&quot;a7&quot;&gt;&lt;a href=&quot;#f7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;If all this wasn’t enough, Citizen Lab published yet another report detailing how Pegasus was used in Mexico to target journalists colleagues of a reporter who was gunned down in 2017, likely in connection with this investigations into the cartels&lt;sup id=&quot;a8&quot;&gt;&lt;a href=&quot;#f8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;I have worked on plenty of investigations into surveillance companies, and uncovered numerous abuses of their products. However, the amount of cases where NSO Group’s Pegasus was found used to repress dissent and monitor reporters and human rights defenders is unprecedented. Why is that?&lt;/p&gt;
-
-&lt;p&gt;This piling number of abuses could very likely be a direct result of the company’s lack of proper human rights due diligence. According to an investigation by Haaretz, NSO Group indeed sold their products to Saudi Arabia for a wowing $55 million, apparently in defiance of the Israeli Ministry of Defence.&lt;/p&gt;
-
-&lt;p&gt;Additionally, it could be that the efficacy and the sophistication of the attack suite that NSO Group provides, and the immense power that is derived, might in fact be an irresistible incentive for ruthless governments to use it even more so against dissidents, journalists and human rights defenders.&lt;/p&gt;
-
-&lt;p&gt;While so far we have only observed attacks being delivered through SMS or WhatsApp messages requiring the victim to click on a link in order to activate the exploitation and infection, the investigation by Haaretz suggests that NSO Group might have sold Saudi Arabia their “0-click” solution as well. This would mean that Saudi Arabia, as well as any other government NSO Group might have sold this to, could have the ability to remotely compromise any iPhone without sending anything visible to the victims and without requiring them to click on any link. This could be theoretically possible if NSO Group would have knowledge of vulnerabilities in the radio components of the phone.&lt;/p&gt;
-
-&lt;p&gt;Currently there is no evidence NSO Group or Saudi Arabia have access to such exploits. To the contrary, the fact that messages with “1-click” exploit links are being found around and used so widely rather suggests the opposite. However, if those claims are proved to be true, the effects of such a capability in the wrong hands could be catastrophic.&lt;/p&gt;
-
-&lt;p&gt;With all attention and the mounting legal trouble, it is unclear what will happen with NSO Group. In the meantime, our investigations continue.&lt;/p&gt;
-
-&lt;p&gt;We are trying to identify other journalists and human rights defenders who might have also been similarly targeted with Pegasus. If you have any information to share, please do get in contact.&lt;/p&gt;
-
-&lt;p&gt;I can be found as @nex on Wire and @nex on Keybase, as well as via email:&lt;/p&gt;
-
-&lt;p&gt;https://nex.sx/contacts/&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/&quot;&gt;Amnesty International Among Targets of NSO-powered Campaign&lt;/a&gt; &lt;a href=&quot;#a1&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://www.theguardian.com/world/2018/may/19/saudi-arabia-womens-rights-activists-arrested-before-lifting-of-driving-ban&quot;&gt;Saudi Arabia: women’s rights activists arrested before lifting of driving ban&lt;/a&gt; &lt;a href=&quot;#a2&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://www.cbc.ca/news/technology/omar-abdulaziz-spyware-saudi-arabia-nso-citizen-lab-quebec-1.4845179&quot;&gt;A Quebecer spoke out against the Saudis - then learned he had spyware on his iPhone&lt;/a&gt; &lt;a href=&quot;#a3&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f4&quot;&gt;&lt;/span&gt;4: &lt;a href=&quot;https://www.forbes.com/sites/thomasbrewster/2018/11/21/exclusive-saudi-dissidents-hit-with-stealth-iphone-spyware-before-khashoggis-murder/#5f7751dc2e8b&quot;&gt;Exclusive: Saudi Dissidents Hit With Stealth iPhone Spyware Before Khashoggi’s Murder&lt;/a&gt; &lt;a href=&quot;#a4&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f5&quot;&gt;&lt;/span&gt;5: &lt;a href=&quot;https://github.com/AmnestyTech/investigations/blob/master/2018-08-01_nso/indicators.csv&quot;&gt;investigations/indicators.csv&lt;/a&gt; &lt;a href=&quot;#a5&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f6&quot;&gt;&lt;/span&gt;6: &lt;a href=&quot;https://www.amnesty.org/en/latest/news/2018/11/israelroguenso-group-must-have-licence-revoked-over-controversial-surveillance-software/&quot;&gt;Israel: Rogue NSO Group must have licence revoked over controversial surveillance software&lt;/a&gt; &lt;a href=&quot;#a6&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f7&quot;&gt;&lt;/span&gt;7: &lt;a href=&quot;https://www.nytimes.com/2018/12/02/world/middleeast/saudi-khashoggi-spyware-israel.html&quot;&gt;Israeli Software Helped Saudis Spy on Khashoggi, Lawsuit Says&lt;/a&gt; &lt;a href=&quot;#a7&quot;&gt;↩&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f8&quot;&gt;&lt;/span&gt;8: &lt;a href=&quot;https://citizenlab.ca/2018/11/mexican-journalists-investigating-cartels-targeted-nso-spyware-following-assassination-colleague/&quot;&gt;Reckless VI: Mexican Journalists Investigating Cartels Targeted with NSO Spyware Following Assassination of Colleague&lt;/a&gt; &lt;a href=&quot;#a8&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-</description>
-            <pubDate>Wed, 05 Dec 2018 00:00:00 +0100</pubDate>
-            <link>https://nex.sx//blog/2018/12/05/nso-group-and-surveillance-of-saudi-dissidents.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2018/12/05/nso-group-and-surveillance-of-saudi-dissidents.html</guid>
         </item>
         
     </channel>
