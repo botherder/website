@@ -17,7 +17,7 @@ If you are a journalist, activist, or human rights defender and you believe you 
 <!--You can find me on [Ricochet](https://ricochet.im) at:  
 <span class="mono">ricochet:rxrxxtbz5vqaatox</span>-->
 
-You can find me on [Wire](https://www.wire.com) at:  
+You can find me on [Wire](https://wire.com) or [Keybase](https://keybase.io) at:  
 <span class="mono">@nex</span>
 
 ### PGP
