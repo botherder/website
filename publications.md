@@ -42,6 +42,7 @@ Following is a selection of talks I have given:
 
 These are reports that I have authored or co-authored that outline long research and investigative efforts.
 
+* [Morocco: Human Rights Defenders Targeted with NSO Group’s Spyware](https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/), *Amnesty International*, 10 October 2019
 * [Evolving Phishing Attacks Targeting Journalists and Human Rights Defenders from the Middle-East and North Africa](https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/), *Amnesty International*, 21 August 2019
 * [Exodus: New Android Spyware Made in Italy](https://securitywithoutborders.org/blog/2019/03/29/exodus.html), *Security Without Borders*, 29 March 2019
 * [Phishing attacks using third-party applications against Egyptian civil society organizations](https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/), *Amnesty International*, 6 March 2019
