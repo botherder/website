@@ -50,9 +50,9 @@ If our theory is correct, Monjib tried to visit `yahoo.fr` in order to access hi
 
 The exploitation process would be the same as by sending malicious links via SMS, but through these automatic network redirects the attackers do not have to rely on successfully luring the victim into clicking on the links, but it happens programmatically.
 
-Therefore, this attack vector is way more reliable and leaves virtually no  traces visible to the victims. Because of this, network injections are also very hard to and identify, document and, especially, reproduce.
+Therefore, this attack vector is way more reliable and leaves virtually no  traces visible to the victims. Because of this, network injections are also very hard to identify, document and, especially, reproduce.
 
-This form of attack is not new. FinFisher and HackingTeam, for example, also soffered similar capabilities to their customers (with FinFly ISP<sup id="a1">[1](#f1)</sup> and Infection Proxy respectively<sup id="a2">[2](#f2)</sup>). A leaked brochure from NSO Group also details this capability in what they call a "Tactical Network Element"<sup id="a3">[3](#f3)</sup>.
+This form of attack is not new. FinFisher and HackingTeam, for example, also offered similar capabilities to their customers (with FinFly ISP<sup id="a1">[1](#f1)</sup> and Infection Proxy respectively<sup id="a2">[2](#f2)</sup>). A leaked brochure from NSO Group also details this capability in what they call a "Tactical Network Element"<sup id="a3">[3](#f3)</sup>.
 
 ## Conclusions
 

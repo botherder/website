@@ -58,9 +58,9 @@ STOPSMS: [exploit link]”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The exploitation process would be the same as by sending malicious links via SMS, but through these automatic network redirects the attackers do not have to rely on successfully luring the victim into clicking on the links, but it happens programmatically.&lt;/p&gt;
 
-&lt;p&gt;Therefore, this attack vector is way more reliable and leaves virtually no  traces visible to the victims. Because of this, network injections are also very hard to and identify, document and, especially, reproduce.&lt;/p&gt;
+&lt;p&gt;Therefore, this attack vector is way more reliable and leaves virtually no  traces visible to the victims. Because of this, network injections are also very hard to identify, document and, especially, reproduce.&lt;/p&gt;
 
-&lt;p&gt;This form of attack is not new. FinFisher and HackingTeam, for example, also soffered similar capabilities to their customers (with FinFly ISP&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and Infection Proxy respectively&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;). A leaked brochure from NSO Group also details this capability in what they call a “Tactical Network Element”&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;This form of attack is not new. FinFisher and HackingTeam, for example, also offered similar capabilities to their customers (with FinFly ISP&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and Infection Proxy respectively&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;). A leaked brochure from NSO Group also details this capability in what they call a “Tactical Network Element”&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
 
