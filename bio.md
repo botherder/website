@@ -4,13 +4,11 @@ title: About
 permalink: /bio/
 ---
 
-If you are looking for a bio to include on print or a webpage, you can use one of the following texts:
-
-#### Short bio
+### Short bio
 
 > Nex (Claudio Guarnieri) is a security researcher, free software developer and artist. He researches the use of technology as a mean for repression, and provides assistance to human rights organizations, journalists, and activists with issues of computer security, privacy and surveillance.
 
-#### Longer bio
+### Longer bio
 
 > Nex (Claudio Guarnieri) is a security researcher and a free software developer. He researches the use of technology as a mean for repression, and provides assistance to human rights organizations, journalists, and activists with issues of computer security, privacy and surveillance. Currently, he is the Head of Security Lab at [Amnesty International](http://www.amnesty.org), and a core member of [The Honeynet Project](http://www.honeynet.org). Nex also co-founded [Security Without Borders](https://www.securitywithoutborders.org).
 >
