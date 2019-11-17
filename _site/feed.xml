@@ -8,6 +8,75 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>iVerify App Launched To Provide Security Oversight and Recommendations to iPhone Users</title>
+            <description>&lt;p&gt;2019 was a brutal year for mobile security already&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and hopefully no more surprises linger around the corner in the remaining weeks of this year. I recognize now this topic dominated even this same newsletter and, in the best tradition of my ranty content, it featured mostly my own frustrations.&lt;/p&gt;
+
+&lt;p&gt;This week US security firm Trail of Bits released iVerify&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, a tool to verify the integrity of an iPhone and harden it by guiding users through various configuration steps.&lt;/p&gt;
+
+&lt;p&gt;The app costs about 6 euros, and if you can afford it you might find worth trying it out. I am enjoying it. Regardless, its release provides me with a good opportunity to discuss some of its functionality and security recommendations for iPhone users, and explain their rationale.&lt;/p&gt;
+
+&lt;p&gt;iVerify leverages Trail of Bits’ commercial “iverify-core” library normally sold to app developers interested to check whether the phone is jailbroken or not. Banking apps, for example, often leverage such frameworks in order to prevent execution on potentially compromised devices. While the fine folks at Trail of Bits are widely respected experts in the field of cyber security, I can not attest to the comprehensiveness of its detection engine without some longer experimentation on the field. It is quite possible iVerify won’t catch the likes of NSO Group in all circumstances, but any clue of a potential compromise helps. Therefore, while you should not blindly trust a green tick labelling your phone as “Secure”, &lt;strong&gt;any warning message might be a good reason to worry&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;What I found more interesting to discuss instead are the configuration options iVerify suggests in a collection of short step-by-step guides. There are many of them, some about privacy or device theft, and some about iOS security. I am going to concentrate on the latter.&lt;/p&gt;
+
+&lt;h2 id=&quot;limit-software-exploits&quot;&gt;Limit Software Exploits&lt;/h2&gt;
+
+&lt;p&gt;The recommendations in this category are aimed at offering the best available configuration for your iPhone to reduce as much as possible the attack surface.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-enable-automatic-updates&quot;&gt;1. Enable Automatic Updates&lt;/h3&gt;
+&lt;p&gt;This might seem the most obvious, falling behind on iOS releases can happen. Staying up-to-date with latest software updates turns you immediately into a slighlty harder target to attack. &lt;strong&gt;Make sure to have Automatic Updates enabled.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-disable-airdrop--bluetooth--personal-hotspot&quot;&gt;2. Disable AirDrop / Bluetooth / Personal Hotspot&lt;/h3&gt;
+&lt;p&gt;With the aim to reduce my own attack surface, I tend to never use services such as AirDrop. Trail of Bits suggests to disable AirDrop too, particularly in light of past vulnerabilities&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Similarly, Bluetooth and Personal Hotspot are proximity network services that might offer potential entry points for attackers in the vicinities, if the exposed network stacks contain vulnerabilities.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-disable-javascript-in-safari&quot;&gt;3. Disable JavaScript in Safari&lt;/h3&gt;
+&lt;p&gt;Attacks that leverage exploits in the browser have reduced significantly on desktops in recent years, but appear again and again in targeted attacks on mobile&lt;sup id=&quot;a4&quot;&gt;&lt;a href=&quot;#f4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. They most commonly manifest through malicious links sent via SMS or instant messengers or, as my team at Amnesty documented in a recent report, through network injection attacks hijacking insecure website visits&lt;sup id=&quot;a5&quot;&gt;&lt;a href=&quot;#f5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;. In order to instrument and deliver the exploit, JavaScript is almost always involved. Interestingly, Safari allows to disable JavaScript entirely, which should drastically disable browser exploits from functioning correctly.&lt;/p&gt;
+
+&lt;p&gt;I have been experimenting for a while with this configuration myself, and I can confirm it breaks most of the websites I end up visiting. You could decide to disable JavaScript in Safari and use it to visit unsolicited or suspicious links, and have a dedicated separate browser (such as Chrome or Firefox) for your own browsing. However, this requires some diligence on your part, and it sacrifices some additional mitigations we’ll discuss later. If the security of your smartphone concerns you particularly, perhaps you might want to consider accepting some sloppy JavaScript-free browsing.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-upgrade-to-a12-cpu-or-higher&quot;&gt;4. Upgrade to A12 CPU or higher&lt;/h3&gt;
+&lt;p&gt;As iVerify rightfully points out, newer iPhone generations come with some important exploit mitigations. Above all Pointer Authentication Codes (PAC), which is only available from the iPhone X series. In the previous newsletter I already addressed&lt;sup id=&quot;a6&quot;&gt;&lt;a href=&quot;#f6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; my concerns around the problematic unavailability of decently secure mobile devices in the lower/mid price range. Mitigations such as PAC, and the more to come in the future, can make a significant difference, but if you want to take advantage of this improvement you would need the financial resources to make a pricey upgrade.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-periodically-reboot-your-device&quot;&gt;5. Periodically reboot your device&lt;/h3&gt;
+&lt;p&gt;Security measures in iOS increase the difficulty for attackers to maintain persistence over a compromised iPhone, even after a successful exploitation. Rumors I heard, and recent reports&lt;sup id=&quot;a7&quot;&gt;&lt;a href=&quot;#f7&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;, suggest that some threat groups are turning to opportunistic smash-and-grab attacks precisely to avoid dealing with obtaining a permanent installation of their malware. Periodically rebooting your device can help cleaning up leftovers and perhaps disabling an existing infection that is not able to survive it.&lt;/p&gt;
+
+&lt;h2 id=&quot;review-for-signs-of-compromise&quot;&gt;Review for signs of compromise&lt;/h2&gt;
+
+&lt;p&gt;Recommendations in this section are rather basic, but unfortunately as much that is possible to a user. I discussed the difficulty of inspecting mobile devices for signs of a compromise in a previous newsletter.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-remove-unknown-devices-from-icloud&quot;&gt;8. Remove unknown devices from iCloud&lt;/h3&gt;
+&lt;p&gt;You might have some older devices you no longer use connected to your iCloud account, or you might find devices you do not recognize at all. If your iCloud account was compromised, perhaps through phishing, attackers might connect a separate device to it in order to synchronize data and files you create. Removing&lt;sup id=&quot;a8&quot;&gt;&lt;a href=&quot;#f8&quot;&gt;8&lt;/a&gt;&lt;/sup&gt; your own unused devices from your account is also a good practice to exercise.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-look-for-suspicious-apple-profiles&quot;&gt;9. Look for suspicious Apple Profiles&lt;/h3&gt;
+&lt;p&gt;In order to manage fleet of phones, enterprises often deploy Mobile Device Management (MDM) platforms. Through MDM, administrators are able to, among other things, monitor the location of the enrolled phones, enforce specific configurations, or install apps. Some threat groups have been found using social engineering to enroll targeted phones with malicious MDM servers under their control and use them, for example, to deploy malicious apps&lt;sup id=&quot;a9&quot;&gt;&lt;a href=&quot;#f9&quot;&gt;9&lt;/a&gt;&lt;/sup&gt;. If an iPhone is enrolled with an MDM server, a profile should appear in the Settings. Checking those profiles, as suggested by iVerify, might reveal some you don’t recognize which you are able to remove.&lt;/p&gt;
+
+&lt;h2 id=&quot;network-security&quot;&gt;Network security&lt;/h2&gt;
+
+&lt;p&gt;The Network Security section only provides one recommendation to enable a particularly interesting feature iVerify has.&lt;/p&gt;
+
+&lt;h3 id=&quot;10-safari-content-blocker&quot;&gt;10. Safari Content Blocker&lt;/h3&gt;
+&lt;p&gt;Safari allows developers to create Content Blocker extensions. Apps such as AdGuard leverages this to block advertisement networks and other unwanted web resources. iVerify uses this too, but to automatically redirect unencrypted HTTP visits to HTTPS, if supported by the website. If it doesn’t, iVerify’s Content Block will stop the insecure request and display a warning. You can test this by visiting www.neverssl.com with Safari.&lt;/p&gt;
+
+&lt;p&gt;While the general intent is to prevent accidental data leakage, especially over insecure networks (such as open Wi-Fis), this feature will also help mitigating network injection attacks such as those described in Amnesty’s “Morocco: Human Rights Defenders Targeted with NSO Group’s Spyware”&lt;sup id=&quot;a5&quot;&gt;&lt;a href=&quot;#f5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; report. Network injection allows attackers to programmatically hijack insecure HTTP connections to any website and redirect the target to an exploitation server which will attempt to compromise the iPhone through, for example, vulnerabilities in the Safari browser.&lt;/p&gt;
+
+&lt;p&gt;By blocking visits to HTTP sites, iVerify &lt;em&gt;should&lt;/em&gt; (I’m using caution here, because I have not actually tested this yet) help you prevent these attacks, so long as you use Safari for all your web browsing. Content Blockers have no effect over other browsers you might have installed, such as Firefox or Chrome.&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://www.vice.com/en_us/article/bjwne5/malicious-websites-hacked-iphones-for-years&quot;&gt;https://www.vice.com/en_us/article/bjwne5/malicious-websites-hacked-iphones-for-years&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://blog.trailofbits.com/2019/11/14/introducing-iverify-the-security-toolkit-for-iphone-users/&quot;&gt;https://blog.trailofbits.com/2019/11/14/introducing-iverify-the-security-toolkit-for-iphone-users/&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://www.zdnet.com/article/apple-airdrop-flaw-leaves-users-vulnerable-to-exploit/&quot;&gt;https://www.zdnet.com/article/apple-airdrop-flaw-leaves-users-vulnerable-to-exploit/&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f4&quot;&gt;&lt;/span&gt;4: &lt;a href=&quot;https://arstechnica.com/information-technology/2019/09/webkit-zeroday-exploit-besieges-mac-and-ios-users-with-malvertising-redirects/&quot;&gt;https://arstechnica.com/information-technology/2019/09/webkit-zeroday-exploit-besieges-mac-and-ios-users-with-malvertising-redirects/&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f5&quot;&gt;&lt;/span&gt;5: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/&quot;&gt;https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f6&quot;&gt;&lt;/span&gt;6: &lt;a href=&quot;https://nex.sx/blog/2019/11/11/the-economic-inequality-of-mobile-security.html&quot;&gt;https://nex.sx/blog/2019/11/11/the-economic-inequality-of-mobile-security.html&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f7&quot;&gt;&lt;/span&gt;7: &lt;a href=&quot;https://blog.malwarebytes.com/mac/2019/08/unprecedented-new-iphone-malware-discovered/&quot;&gt;https://blog.malwarebytes.com/mac/2019/08/unprecedented-new-iphone-malware-discovered/&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f8&quot;&gt;&lt;/span&gt;8: &lt;a href=&quot;https://support.apple.com/en-us/HT205064&quot;&gt;https://support.apple.com/en-us/HT205064&lt;/a&gt;&lt;br /&gt;
+&lt;span id=&quot;f9&quot;&gt;&lt;/span&gt;9: &lt;a href=&quot;https://blog.talosintelligence.com/2018/09/ios-mdm-hide-the-app.html&quot;&gt;https://blog.talosintelligence.com/2018/09/ios-mdm-hide-the-app.html&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Sun, 17 Nov 2019 00:00:00 +0100</pubDate>
+            <link>https://nex.sx//blog/2019/11/17/iverify-app-launched-provide-security-oversight-to-iphone-users.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2019/11/17/iverify-app-launched-provide-security-oversight-to-iphone-users.html</guid>
+        </item>
+        
+        <item>
             <title>The Economic Inequality of Mobile Security</title>
             <description>&lt;p&gt;If talking about digital security and best practices wasn’t hard enough already, it is a few notches harder talking about mobile security. With smartphones increasingly becoming the platform of choice for most people to communicate and work over the Internet, journalists, activists, and human rights defenders embraced them too. Especially in certain regions where DSL lines, and laptops, are not available or are unaffordable. With this change, security concerns of individuals at risk have shifted as well over the years.&lt;/p&gt;
 
@@ -392,53 +461,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Wed, 13 Feb 2019 00:00:00 +0100</pubDate>
             <link>https://nex.sx//blog/2019/02/13/the-death-of-the-exploit.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/02/13/the-death-of-the-exploit.html</guid>
-        </item>
-        
-        <item>
-            <title>The Losing Battle of Phishing Education</title>
-            <description>&lt;p&gt;Today Google Jigsaw launched a new resource self-descriptively called Phishing Quiz. I generally applaud these efforts and I myself often recur to quizzes in my occasional trainings. This one is well designed and straightforward to use.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://phishingquiz.withgoogle.com/&quot;&gt;https://phishingquiz.withgoogle.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The declared purpose of these quizzes is to enable potential at-risk individuals to train their eyes in spotting suspicious elements in email messages and web pages. For me, the purpose is rather to highlight the difficulty in recognizing well-crafted phishing attacks, and the numerous design inconsistencies across online service providers.&lt;/p&gt;
-
-&lt;p&gt;Google’s quiz perfectly highlights many of these inconsistencies, and I invite you to try it for yourself. I did the same and at the end of it I tried to anticipate how an individual approaching this subject for the first time might leave confused.&lt;/p&gt;
-
-&lt;p&gt;Training individuals to detect phishing attacks through visual references is hard, because those don’t follow a logic shared across platforms and because they change occasionally.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;[SPOILER ALERT: I am going to reference certain results from the Google Phishing Quiz, so do not read further if you don’t want any anticipations.]&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In this quiz the primary two key visual elements the exercises are based upon are the email sender’s address and the links contained in the body of the message. Ideally, through this, individuals should identify patterns and construct a mental model to apply to any similar real-case scenario. However, we immediately see inconsistencies.&lt;/p&gt;
-
-&lt;p&gt;In one exercise we are suggested that an email is in fact legitimate because, along with the validity of a contained link, the sender’s email address contain the domain @dropboxmail.com, which is an actual domain in use by Dropbox instead of the more intuitive @dropbox.com. At the same time, however, a different exercise alerts us that an email sender with @google.support is malicious because the domain is not in use by Google.&lt;/p&gt;
-
-&lt;p&gt;Perhaps an agreement among service providers to all adopt a similar scheme would be beneficial. For example, instead of using various domain names, all should stick to their primary domain for email communications, e.g. &lt;em&gt;noreply@dropbox.com&lt;/em&gt; or &lt;em&gt;noreply@google.com&lt;/em&gt; instead of &lt;em&gt;dropboxmail.com&lt;/em&gt; or &lt;em&gt;googlemail.com&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;When it comes to links contained in the body of email messages we could expect similar confusion. Forged domains intended to deceive (such as “&lt;em&gt;paypal.com-myaccount-login-issuespayment-global.realbaddomain.com&lt;/em&gt;”) should immediately stand out, but we also need to be alert of other more insidious techniques!&lt;/p&gt;
-
-&lt;p&gt;As Google’s quiz exemplifies, a phishing link could come in the form of an actual Google domain for example:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;https://google.com/amp/gmail-account-activation.support/&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This would be a valid Google link redirecting to an hypothetical phishing site. Similarly, an email could also contain a valid Google link that will lead to a prompt requesting a malicious app to be enabled on our Gmail account. Ironically, even the domain of the quiz could be deceiving: what is withgoogle.com?&lt;/p&gt;
-
-&lt;p&gt;Essentially we are demanding individuals to not only be able to discern clearly forged domains from legitimate sites, but also to be aware of all the possible tricks to abuse existing functionality (such as OAuth&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; or redirects). Additionally, we are demanding them to be aware of what email addresses or message formats are commonly used by legitimate services at any point in time.&lt;/p&gt;
-
-&lt;p&gt;This is unattainable. If the burden relies so heavily on users, the underlying technology appears inadequate to me.&lt;/p&gt;
-
-&lt;p&gt;Without entering in the merit of mitigations such as two-factor authentication (which I discussed in the previous newsletter), or with other complications such as spoofing, we have identified enough booby traps already to likely dissuade most people from learning about online accounts security.&lt;/p&gt;
-
-&lt;p&gt;We need more consistency across services. Consistency of procedures, language and available mitigations. And perhaps it is time to sacrifice some convenience and functionality in favor of a smaller attack surface.&lt;/p&gt;
-
-&lt;p&gt;p.s.: As you might have noticed, I am making excessive use of the term “individuals”. I am purposefully trying to avoid “users”, which I generally don’t like. If you have any recommendations for more suitable words, I would very much appreciate them!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://duo.com/blog/gmail-oauth-phishing-goes-viral&quot;&gt;GMail OAuth Phishing Goes Viral&lt;/a&gt; &lt;a href=&quot;#a1&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-</description>
-            <pubDate>Tue, 22 Jan 2019 00:00:00 +0100</pubDate>
-            <link>https://nex.sx//blog/2019/01/22/the-losing-battle-of-phishing-education.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/01/22/the-losing-battle-of-phishing-education.html</guid>
         </item>
         
     </channel>
