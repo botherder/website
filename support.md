@@ -7,6 +7,9 @@ permalink: /support/
 If you wish to support or show appreciation to my work, you can do so using any of the following options.
 
 <div style="border:2px solid #555;padding: 1em;margin-top: 1.5em;margin-bottom: 1.5em;">
+<i class="fab fa-github"></i> <a target="_blank" href="https://github.com/sponsors/botherder">Sponsor me on GitHub</a>
+</div>
+<div style="border:2px solid #555;padding: 1em;margin-top: 1.5em;margin-bottom: 1.5em;">
 <i class="fab fa-patreon"></i> <a target="_blank" href="https://www.patreon.com/botherder">Become my patron on Patreon</a>
 </div>
 <div style="border:2px solid #555;padding: 1em;margin-top: 1.5em;margin-bottom: 1.5em;">
