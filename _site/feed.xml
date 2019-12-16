@@ -8,6 +8,39 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>The Year of the Phish</title>
+            <description>&lt;p&gt;Throughout 2019 we have seen phishing tactics evolve and mutate. We have seen a resurgence of &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;traditional forms&lt;/a&gt; as well as &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&quot;&gt;new variations&lt;/a&gt; of OAuth Phishing; we have seen bypasses of two-factor authentication &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/&quot;&gt;becoming mainstream&lt;/a&gt;; and we have finally come across a campaign of targeted phishing attacks against human rights defenders using &lt;a href=&quot;https://www.zdnet.com/article/new-tool-automates-phishing-attacks-that-bypass-2fa/&quot;&gt;reverse proxies&lt;/a&gt; and session hijacking, which we will disclose in an upcoming report. As the end of the year approaches, security vendors release statistics and analyses from the data they have collected over 2019, with the likes of Google and Microsot also having seen phishing making a come back. A few days ago Microsoft’s Office 365 Threat Research Team published a blog post titled &lt;a href=&quot;https://www.microsoft.com/security/blog/2019/12/11/the-quiet-evolution-of-phishing/&quot;&gt;&lt;em&gt;“The quiet evolution of phishing”&lt;/em&gt;&lt;/a&gt;, where they detail the more innovative techniques adopted by phishers in 2019. While the tricks Microsoft identified do not align with those we observed throughout Amnesty’s work in the last year, we seem to arrive to some of the same conclusions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“In 2019, we saw phishing attacks reach new levels of creativity and sophistication.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Microsoft also launched an &lt;a href=&quot;https://www.microsoft.com/securityinsights/&quot;&gt;interactive site&lt;/a&gt; complementing their annual Security Intelligence Report, where you can visualize Redmond’s visibility into attacks from the previous 12 months. I recommend taking a look. I enjoy analyzing these statistics to identify patterns and verify discrepancies or similarities to my own observations. According to their data, Microsoft saw a &lt;a href=&quot;https://www.microsoft.com/securityinsights/Malware&quot;&gt;decrease in malware encounters&lt;/a&gt; on Windows computers since 2018, which they attribute to the &lt;em&gt;“growth in adoption of Windows 10, and increased use of Windows Defender for protection”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog/20191215/microsoft.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the other hand, they document an ever &lt;a href=&quot;https://www.microsoft.com/securityinsights/DDoS&quot;&gt;growing popularity of DDoS attacks&lt;/a&gt;, as well as an &lt;a href=&quot;https://www.microsoft.com/securityinsights/Phishing&quot;&gt;increase in phishing email detections&lt;/a&gt;, which peaked at around 0.85% of all emails Microsoft analyzed in July 2019.&lt;/p&gt;
+
+&lt;p&gt;Similarly, according to telemetry from &lt;a href=&quot;https://transparencyreport.google.com/safe-browsing/overview&quot;&gt;Google Safe Browsing’s Transparency Report&lt;/a&gt;, malware sites have rapidly become a rare occurrence while phishing sites have skyrocketed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog/20191215/safebrowsing.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I do not know how to best interpret these graphs, but they seem indicative of a radical change occurring over the last two years. Browsers have certainly made leaps when it comes to security, and perhaps changes over the last couple of years have rendered malware delivery unfeasible. Phishing, instead, is either much more effectively detected or on a worrying rise. Are DDoS and phishing becoming the tactics of choice in response to a greater difficulty in infecting devices? Is malware becoming economically disadvantageous? Or simply the vectors have changed? I am interested to hear your take on what these statistics might tell us.&lt;/p&gt;
+
+&lt;p&gt;Because phishing is such a dominant threat for the targeted groups I normally work with, I have been working over the last years on a number of tools and services to mitigate and respond to such attacks. While I will hopefully share more details about some of those in the future, &lt;strong&gt;I decided to release now a 25GB archive of data on the latest 100’000 phishing sites one of my systems processed.&lt;/strong&gt; This archive contains a SQLite database with a list of original URLs retrieved from various feeds, the final URL it eventually redirected to, as well as the DOM HTML and a screenshot of the page.&lt;/p&gt;
+
+&lt;p&gt;You can download it using this Torrent magnet link:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;magnet:?xt=urn:btih:28f02613928c2666f7a8f70be4079c1084012cbb&amp;amp;dn=phishing.zip&amp;amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are a security trainer looking for a large collection of phishing screenshots to use in educational material, or if you are an academic studying phishing, or a security analyst looking to test your organization’s defenses, you might find this dataset useful. If you do, please let me know, as I am interested to learn of any derived insight or clever use.&lt;/p&gt;
+</description>
+            <pubDate>Sun, 15 Dec 2019 00:00:00 +0100</pubDate>
+            <link>https://nex.sx//blog/2019/12/15/the-year-of-the-phish.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2019/12/15/the-year-of-the-phish.html</guid>
+        </item>
+        
+        <item>
             <title>iVerify App Launched To Provide Security Oversight and Recommendations to iPhone Users</title>
             <description>&lt;p&gt;2019 was a brutal year for mobile security already&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and hopefully no more surprises linger around the corner in the remaining weeks of this year. I recognize now this topic dominated even this same newsletter and, in the best tradition of my ranty content, it featured mostly my own frustrations.&lt;/p&gt;
 
@@ -424,43 +457,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Fri, 08 Mar 2019 00:00:00 +0100</pubDate>
             <link>https://nex.sx//blog/2019/03/08/phishing-attacks-against-egyptian-civil-society.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/03/08/phishing-attacks-against-egyptian-civil-society.html</guid>
-        </item>
-        
-        <item>
-            <title>The Death of The Exploit</title>
-            <description>&lt;p&gt;Matt Miller, from Microsoft Security Response Center, delivered a very interesting presentation at the Bluehat conference few days ago titled “Trends, challenges, and strategic shifts in the software vulnerability mitigation landscape”.&lt;/p&gt;
-
-&lt;p&gt;In this presentation Matt, who is otherwise known as “skape” and is recognized for his many years of work on exploit research and his contributions to the Metasploit project, provided a very interesting overview of the progress made over the last decade on tackling software vulnerabilities. I very much recommending reading the &lt;a href=&quot;https://github.com/Microsoft/MSRC-Security-Research/blob/master/presentations/2019_02_BlueHatIL/2019_&quot;&gt;slides&lt;/a&gt; and I hope a video recording will be made available soon.&lt;/p&gt;
-
-&lt;p&gt;There are several takeaways from this presentation, and those I found most relevant are:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1) While the amount of known software vulnerabilities reported every year follows an increasing trajectory, the percentage of those that are actually exploited in the wild is decreasing.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This highlights an interesting discrepancy which is hard to recognize for those who do not have access to telemetry such as Microsoft’s: while software vulnerabilities appear to be piling up like never before, attackers are leveraging fewer. This is an interesting trend and while I can imagine a variety of factors that might be influencing this shift, I would be interested in hearing more.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2) Increasingly more often, software vulnerabilities are found to be exploited for the first time as 0days, rather than after a patch is released.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Publicly available exploits are becoming less effective, possibly because of more dedicated update mechanisms employed by recent versions of Windows, and less reliable, thanks to the various mitigation techniques introduced in the last years. Leveraging a patched vulnerability now is most likely to be unsuccessful.&lt;/p&gt;
-
-&lt;p&gt;However, we need to wary of generalizations. Especially in countries with economic difficulties and even more so in countries subjected to embargoes, the availability of most recent hardware and software might be limited, particularly at the cost of individuals at risk.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3) Exploit mitigations have had a significant impact, and we might see a day not too far away where software vulnerabilities are not as much of a concern anymore.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Essentially, things are getting better. With the exception of WannaCry, mass-spreading threats have nearly disappeared and so has the pandemic exploitation of browsers and plugins and of productivity suites.&lt;/p&gt;
-
-&lt;p&gt;I’ve been making similar observations in my monitoring of state-sponsored campaigns. While some years ago the largest majority of attacks were almost expected to make use of an Adobe Reader or Office exploit (ah, the good old CVE-2012-0158 days!) now any exploit at all is a rare sight for me.&lt;/p&gt;
-
-&lt;p&gt;Over the last couple of years I have been doing the exercise of looking back at all disclosed campaigns of targeted attacks against civil society from the previous year and try to derive some patterns and trends. With the exception of some high profile cases, such as those of NSO Group, the cases in which any exploit at all (0day or not) was used are near zero.&lt;/p&gt;
-
-&lt;p&gt;Instead, way more predominant is the abuse of certain Windows and Office features that are primarily intended for enterprises but are also a perfect attack surface for end users (such as Macros, OLE, DDE, PowerShell, etc.) and reflect a &lt;a href=&quot;https://nex.sx/blog/2017/01/11/on-banality-of-attacks.html&quot;&gt;lack of care for the needs of individuals at risk&lt;/a&gt;. In addition, more recently credentials phishing seems to be making a &lt;a href=&quot;https://nex.sx/blog/2018/12/20/phishing-2fa-and-false-myths.html&quot;&gt;strong return&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As a matter of fact, I believe we are currently witnessing a bigger investment in improving credential phishing frameworks and tactics than in developing spyware. The spyware we observe is generally rudimentary and, while I have no solid data to back this up, I believe spyware’s return of investment is getting comparatively lower than that of phishing. The infection rate is quite likely significantly decreasing and at no discount of operational costs. Phishing instead largely remains an unsolved problem and it is quantitatively the most common threat we observe these days. Although I very wildly estimate a success rate generally below 10%, it’s an attack that is cheap to develop and operate and is reusable almost indefinitely.&lt;/p&gt;
-
-&lt;p&gt;Getting back to software vulnerabilities and exploits, Matt writes in his presentation that Microsoft’s strategy against them is turning from “increasing cost &amp;amp; difficulty” to “getting to done”. It’s comforting to think we might eventually be “done” with exploits, but if we learned anything out of decades of cybersecurity is that the death of the exploit might just be the birth of something new.&lt;/p&gt;
-</description>
-            <pubDate>Wed, 13 Feb 2019 00:00:00 +0100</pubDate>
-            <link>https://nex.sx//blog/2019/02/13/the-death-of-the-exploit.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/02/13/the-death-of-the-exploit.html</guid>
         </item>
         
     </channel>
