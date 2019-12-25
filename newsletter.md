@@ -14,7 +14,7 @@ I curate a personal newsletter where you can expect various reflections on cyber
 
 <h2 style="margin-top: 1.5em;">Archive</h2>
 
-<p>Here you can find an archive of some of the previous newsletters. Please note that this archive is selective and is not updated timely. Do subscribe to receive my writings straight to your email.</p>
+<p>Here you can find an archive of some of the previous newsletters. Please note that this archive is selective and is not updated timely. Do subscribe to receive my writings straight to your email. You can also <a href="/feed.xml">subscribe to the <i class="fa fa-rss-square"></i> RSS feed</a>.</p>
 
 <table style="margin-top: 1em; margin-bottom: 1em;">
 {% for post in site.categories.blog %}
