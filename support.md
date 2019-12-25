@@ -13,7 +13,7 @@ If you wish to support or show appreciation to my work, you can do so using any 
 <i class="fab fa-patreon"></i> <a target="_blank" href="https://www.patreon.com/botherder">Become my patron on Patreon</a>
 </div>
 <div style="border:2px solid #555;padding: 1em;margin-top: 1.5em;margin-bottom: 1.5em;">
-<i class="fas fa-sync-alt"></i> </i> <a target="_blank" href="https://flattr.com/@botherder">Support me on Flattr</a>
+<i class="fas fa-sync-alt"></i> <a target="_blank" href="https://flattr.com/@botherder">Support me on Flattr</a>
 </div>
 <div style="border:2px solid #555;padding: 1em;margin-top: 1.5em;margin-bottom: 1.5em;">
 <i class="fas fa-coffee"></i> <a target="_blank" href="https://ko-fi.com/Q5Q3VX7Q">Buy me a coffee on Ko-fi</a>
