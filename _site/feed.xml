@@ -8,6 +8,53 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>What To Do For Users At Risk</title>
+            <description>&lt;p&gt;If your company offers a product or a service with a sufficiently large user base, chances are you also have users at risk. Journalists, dissidents, and human rights defenders classify as regular consumers to the technology market, despite their peculiar needs. Security firms, software vendors and social media companies, or other service providers, interested in paying particular care to those users might face challenges. Paying attention to their needs, however, is already a great first step, even more so considering they most likely constitute a very small percentage of the whole. Kudos.&lt;/p&gt;
+
+&lt;p&gt;From the occasional conversations I have had with such companies, and from cases I experienced over the years, I decided to offer here some initial thoughts on how to think about security for users at risk. However, this is a complex topic, that should be unpacked according to the characteristics of your product. This is a starting point.&lt;/p&gt;
+
+&lt;h2 id=&quot;product-design-makes-a-difference-negative-or-positive&quot;&gt;Product design makes a difference, negative or positive&lt;/h2&gt;
+
+&lt;p&gt;I believe design to be an integral part of digital security, particularly in this context. While in the enterprise sector, security professionals are tasked to protect the company’s infrastructure and employees, individuals at risk are on their own. They carry a heavier burden on their own shoulders, and a lot of their security education, self-taught or trained, relies on being on the lookout for anomalies in their daily use of products and services. Be it in the webmail or the document processor they use, users count on visual clues of unusual behavior. As a matter of fact, the majority of campaigns of targeted attacks we discover originate from the own suspicion of a “patient zero”.&lt;/p&gt;
+
+&lt;p&gt;Users’ suspicion tends to be provoked by disparate factors. Often the most misguided originates from news coverage of a prominent hack. I have lost count of the number of people who contacted us alarmed by missed WhatsApp calls, after the infamous NSO Group exploit from April 2019. The more savvy will instead be trained to look for a “green tick”, a “green padlock”, a “domain in the browser’s address bar”, an “Enable this content” button on Microsoft Office, and infinite more clues. Users will also identify their own visual elements and develop patterns, for example: how email notifications are worded by Internet companies, or how login pages typically look.&lt;/p&gt;
+
+&lt;p&gt;Some of these visual clues become obsolete (great example is the “green padlock” now, with the popularity of Cloudflare and Let’s Encrypt among phishing sites), some others instead are occasionally changed by developers. Because of this, I am reluctant to recommend them in trainings, but I know they are relied upon. When you develop a platform, every little detail counts.&lt;/p&gt;
+
+&lt;p&gt;When you introduce a new action, try to make it as explicit as possible, and use it as an opportunity to reinforce safe behavior. An example: you need to send an email notification to the user, soliciting some action. Under the glossy HTML button, offer in text the explicit destination they can manually reach. Structure your site so that critical links you expect users to be often directed to are concise and memorable, such as “account.service.com/security”, or “security.service.com”, not “https://account-management.customers-portal.service.com/internal/users/qwertyuiop/review.php?id=1234589&amp;amp;z=asdfghjkl&amp;amp;q=zxcvbnm#0987654321”. In this way you offer an alternative from blindly clicking buttons, and you will add a visual clue users can spontaneously identify.&lt;/p&gt;
+
+&lt;p&gt;At the point you roll out a design change, for as small as it might be, you should be committed to it. You might conclude, for example, that the “green tick” you added a while ago to authenticate an identity wasn’t that useful after all. However, its sudden removal might provoke unwarranted suspicion, or worse a false reassurance to catastrophic effect for a user at risk. Be conscious of potential negative effects of your design choices.&lt;/p&gt;
+
+&lt;p&gt;Occasionally I notice design changes quietly appear in the services I use. Sometimes new visual elements appear that might prove useful to enhance users’ safety, but seem to be taken for granted and their meaning is not explained. Security education resources are invaluable, and most platform providers offer some, but you need to keep in mind that users do not spontaneously, let alone regularly, visit them. Try to embed as much education as possible directly within your product’s interface, and direct people to your long-form guides. Bolden and promote the positive effects of your design choices.&lt;/p&gt;
+
+&lt;h2 id=&quot;prevention-is-not-enough-information-is-key&quot;&gt;Prevention is not enough, information is key&lt;/h2&gt;
+
+&lt;p&gt;Besides the obvious technical and structural differences, one fundamental aspect separates enterprise security from consumer security products: for the former, security products and services tend to be designed to provide (or simplify collecting) as much contextual information as possible about an attack, the attacker, and its motivations, in order to help prioritize incidents to respond to; for the latter instead, products and services are usually designed to block or prevent attacks with as little involvement of the end user as possible.&lt;/p&gt;
+
+&lt;p&gt;This design choice quickly becomes inadequate for individuals at risk, such as journalists, dissidents or activists, who are indeed consumers but that face threats comparable to those faced by enterprises. This asymmetry creates a tension which vendors should creatively address by re-adapting principles typical for corporate security to this new context.&lt;/p&gt;
+
+&lt;p&gt;Above all, I believe, information is key. Under the assumption that the broader consumer base faces threats that are untargeted and probably financially motivated, providing details of a common attack might be unnecessary. At-risk individuals instead deal with personalized attacks that come with deeper personal implications. Being alerted that a state-sponsored group is attempting to compromise their devices and online accounts could be an early warning to increased scrutiny and pressure. By experience, in fact, cyber attacks tend to anticipate or complement other forms of repression.&lt;/p&gt;
+
+&lt;p&gt;With these cosideration in mind, a malicious email being silently moved to the “Spam” folder, or a malware infection getting quietly quarantined, or an account login being blocked, might prevent crucial opportunities for re-calculating personal risk.&lt;/p&gt;
+
+&lt;p&gt;Some of the big tech companies, such as Google, Facebook, Yahoo, and Microsoft, started warnings their end-users of state-sponsored attacks they might have suffered. This is an important first step, which more companies should embrace. Yet, there is always room for improvement: these warnings tend to be context-free and offer little advice. Instead, aim to share enough details on the type of attack detected, its timeframe, and appropriate mitigations and resources for support (more on this later). I understand that sharing the suspected origin of an attack isn’t easy, but I would suggest offering some clarifying elements in case there’s a good chance that the targets would, on their own, come to the wrong conclusions (for example: in cases you have clear evidence that suggests the attacker is not domestic, but a foreign actor).&lt;/p&gt;
+
+&lt;h2 id=&quot;what-to-do-when-you-identify-targeted-individuals-at-risk&quot;&gt;What to do when you identify targeted individuals at risk&lt;/h2&gt;
+
+&lt;p&gt;Occasionally threat intelligence companies stumble in campaigns of targeted attacks extending beyond the corporate space and into civil society. As it goes with such investigations, researchers at times discover the identity of individual targets, usually because the attackers committed some mistakes and left operational details exposed. Obtaining such deep visibility into the activities of state-sponsored threat actors can be precious. When those targeted are individuals or groups at risk, I believe researchers need to carefully consider how to act responsibly.&lt;/p&gt;
+
+&lt;p&gt;First thing first: don’t withold that information, it could be critical to inform targets. Secondly: don’t just directly publish their identities, especially if they are of individuals or small groups. At the very least, you need to obtain their consent. Such disclosures might force their adversaries’ hands and accelerate existing pressures. While you might feel you have a clear understanding of a campaign you discovered and the capabilities of the adversary, you most likely can’t say the same for targets’ condition. You need to exercise more care than you normally would even in corporate space.&lt;/p&gt;
+
+&lt;p&gt;I have seen security companies address this issue by disclosing the targets’ identities to journalists (while securing coverage for their own research) and essentially dropping the ball. This might not be the right approach either. I must say that, hoping my journalists friends will not resent me, reporters are not best equipped to deal with at-risk individuals under these circumstances. They will most likely establish contact with those affected, inform them about the company’s discoveries, and seek to collect a testimony for their own articles. Nothing wrong with that. However, someone who is already on the lookout because of their exposure will be alarmed by the news and will need support. It might be technical support, but also legal, logistical or psychological. For example: because of the risk we calculated with targeted individuals we identified during cases we worked at Amnesty, we determined necessary to provide legal counsel, or resources to install security cameras, or even plan to evacuate a person from their country. Cyber attacks do not happen in a vacuum for human rights defenders, and support needs to be holistic.&lt;/p&gt;
+
+&lt;p&gt;Therefore, I recommend to reach out to organizations known to provide support to the targeted community, such as Amnesty International, Frontline Defenders, or Committee to Protect Journalists, explain the circumstances and seek their collaboration (and I underline “collaboration” here, because they’re not your clearing house either) in making sure the situation is addressed appropriately and any potential damange is mitigated. Some might be more connected than others in certain communities or geographical regions, in that case you will likely be pointed to more appropriate partners.&lt;/p&gt;
+</description>
+            <pubDate>Sun, 05 Jan 2020 00:00:00 +0100</pubDate>
+            <link>https://nex.sx//blog/2020/01/05/what-to-do-for-users-at-risk.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2020/01/05/what-to-do-for-users-at-risk.html</guid>
+        </item>
+        
+        <item>
             <title>The Year of the Phish</title>
             <description>&lt;p&gt;Throughout 2019 we have seen phishing tactics evolve and mutate. We have seen a resurgence of &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;traditional forms&lt;/a&gt; as well as &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&quot;&gt;new variations&lt;/a&gt; of OAuth Phishing; we have seen bypasses of two-factor authentication &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/&quot;&gt;becoming mainstream&lt;/a&gt;; and we have finally come across a campaign of targeted phishing attacks against human rights defenders using &lt;a href=&quot;https://www.zdnet.com/article/new-tool-automates-phishing-attacks-that-bypass-2fa/&quot;&gt;reverse proxies&lt;/a&gt; and session hijacking, which we will disclose in an upcoming report. As the end of the year approaches, security vendors release statistics and analyses from the data they have collected over 2019, with the likes of Google and Microsot also having seen phishing making a come back. A few days ago Microsoft’s Office 365 Threat Research Team published a blog post titled &lt;a href=&quot;https://www.microsoft.com/security/blog/2019/12/11/the-quiet-evolution-of-phishing/&quot;&gt;&lt;em&gt;“The quiet evolution of phishing”&lt;/em&gt;&lt;/a&gt;, where they detail the more innovative techniques adopted by phishers in 2019. While the tricks Microsoft identified do not align with those we observed throughout Amnesty’s work in the last year, we seem to arrive to some of the same conclusions:&lt;/p&gt;
 
@@ -422,41 +469,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Thu, 04 Apr 2019 00:00:00 +0200</pubDate>
             <link>https://nex.sx//blog/2019/04/04/exodus-spy-scandal-italy.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/04/04/exodus-spy-scandal-italy.html</guid>
-        </item>
-        
-        <item>
-            <title>Phishing Attacks Using Third-Party Applications Against Egyptian Civil Society Organizations</title>
-            <description>&lt;p&gt;I am aware that most of my recent newsletters dealt with the issue of account security and phishing, but I have one more story on this to share with you. I suppose this is indicative of the sad nature of the digital (in)security we face today. I promise, in the newsletters to come I will cover other topics as well.&lt;/p&gt;
-
-&lt;p&gt;Yesterday, we published a short blog post warning of an ongoing campaign of phishing attacks targeting human rights defenders and NGOs from Egypt.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To quote directly from the report:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Since January 2019 several human rights defenders and civil society organizations from Egypt started forwarding dozens of suspicious emails to Amnesty International. Through the course of our investigation we discovered that these emails were attempts to access the email accounts of their targets through a particularly insidious form of phishing known as OAuth Phishing (which we explain in detail below). We estimate the total number of targeted individuals to be in the order of several hundreds.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“These coincided with a number of important events that took place in the country. In the run-up to the eighth anniversary of Egypt’s 25 January uprising, which ended with the removal of former president Hosni Mubarak, after 30 years in power, we recorded 11 phishing attacks against NGOs and media collectives. We saw another burst of attacks during French President Emmanuel Macron’s visit to Cairo to meet with President Abdelfatah al-Sisi on 28 and 29 January. The attacks peaked on 29 January, the day that President Macron met with human rights defenders from four prominent Egyptian NGOs. Later, in the first week of February, several media organizations were targeted as part of this campaign of digital attacks; they were reporting on the process of amending the Egyptian Constitution that the parliament had just officially started.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;OAuth Phishing is an insidious phishing technique that is not very common, and consequently not as widely known to individuals at risk as the more traditional forms of phishing. Additionally, security education material rarely includes mentions of OAuth Phishing.&lt;/p&gt;
-
-&lt;p&gt;Essentially, OAuth Phishing relies on a feature that is commonly available with many email providers (such as Google, Yahoo, Hotmail and Outlook) that allows people to grant third-party applications access to their accounts. Legitimate third-party applications could be designed to, for example, extract invitations or flight and hotel bookings from the email inbox and add them to an external calendar application.&lt;/p&gt;
-
-&lt;p&gt;Attackers can abuse this feature and create malicious third-party applications that are masqueraded as legitimate while in reality their purpose is to steal the emails from the victim.&lt;/p&gt;
-
-&lt;p&gt;In the blog post we provide additional details and visuals explaining how this attack works and how to mitigate against it. Unfortunately, because this form of phishing does not rely on creating and distributing a fake login prompt for a legitimate service, but abuses the service directly, the only prevention is to be alert and suspicious of third-party applications.&lt;/p&gt;
-
-&lt;p&gt;As we highlight in the blog post, the targets of this latest campaign in Egypt significantly overlap with the targets of a similar phishing campaign discovered two years ago. At the time, the attackers set up the typical Google login clones and lured targets into giving away their credentials. Since then, human rights defenders and NGOs have equipped themselves with two-factor authentication solutions that mitigated that form of phishing. Now, the attackers have clearly adapted and the use of OAuth Phishing seems like a direct response to the better security practices that have been adopted by their targets.&lt;/p&gt;
-
-&lt;p&gt;Attackers are agile in their tactics, we need to be as agile in our defenses.&lt;/p&gt;
-</description>
-            <pubDate>Fri, 08 Mar 2019 00:00:00 +0100</pubDate>
-            <link>https://nex.sx//blog/2019/03/08/phishing-attacks-against-egyptian-civil-society.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/03/08/phishing-attacks-against-egyptian-civil-society.html</guid>
         </item>
         
     </channel>
