@@ -1,7 +1,7 @@
 ---
 layout: artwork
 title: "Gallery of Surveillance"
-info: 2018
+info: 2018-2019
 media: Digital installation
 description: Interactive installation exploring technologies of surveillance used to monitor human rights defenders
 permalink: art/gallery-of-surveillance/
