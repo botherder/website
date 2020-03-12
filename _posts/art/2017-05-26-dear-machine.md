@@ -11,7 +11,7 @@ thumbnail: /assets/art/dear-machine/thumbnail.png
 
 Web pages are written in a mark-up language called [HTML](https://www.w3schools.com/html/default.asp), which provides a set of instructions to shape and decorate information online.
 
-In HTML you can write invisible [comments](https://www.w3schools.com/html/html_comments.asp) between the markers &lt;!-- and --&gt;.
+In HTML you can write invisible [comments](https://www.w3schools.com/html/html_comments.asp) between the markers <mono><b>&lt;!--</b></mono> and <mono><b>--&gt;</b></mono>.
 
 Comments are annotations to the structure of webpages that remain hidden to you, the viewer. Most often they are reminders to oneself or forgotten snippets of code, other times they are thoughts, words in a secret exchange between the developers and the machine that processes the code of the websites you visit, telling stories of how the Web came to be.
 

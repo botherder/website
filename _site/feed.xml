@@ -8,6 +8,31 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Phishing and Malware Attacks against Activists in Uzbekistan</title>
+            <description>&lt;p&gt;Today Amnesty Tech’s Security Lab is publishing a new short report about targeted malware and phishing attacks against activists and journalists in Uzbekistan:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2020/03/targeted-surveillance-attacks-in-uzbekistan-an-old-threat-with-new-techniques/&quot;&gt;https://www.amnesty.org/en/latest/research/2020/03/targeted-surveillance-attacks-in-uzbekistan-an-old-threat-with-new-techniques/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this report we detail some renewed tactics by a threat actor that we had been monitoring for a while. This actor appears to be based in Uzbekistan and targets primarily domestic activists and academics, as well as governmental and diplomatic figures from neighbouring countries. While we are not able to establish a direct connection, because of the lack of public technical details, it is worth noting that &lt;a href=&quot;https://www.vice.com/en_us/article/3kx5y3/uzbekistan-hacking-operations-uncovered-due-to-spectacularly-bad-opsec&quot;&gt;Kaspersky disclosed last year the existence of the group labelled “SandCat”&lt;/a&gt; which they attribute to Uzbekistan’s State Security Service[1].&lt;/p&gt;
+
+&lt;p&gt;Today we disclose some details and the accompanying technical indicators of attacks we’ve observed throughout 2019 consisting of phishing, as well as custom developed spyware for Windows and Android.&lt;/p&gt;
+
+&lt;p&gt;Of particular interest is the fact that this campaign represents the first time we observed the use of “reverse proxies” in targeted phishing against activists and journalists. This technique, sometimes referred to as “session riding” or “session hijacking”, relies on the deployment of a malicious server that simply relays the requests between the targeted individual and the original service, such as Google. The attackers will then register a credible domain (in this case, for example, &lt;em&gt;mail-auth[.]online&lt;/em&gt;, &lt;em&gt;acccountsgoog1e[.]com&lt;/em&gt;, &lt;em&gt;account-mail[.]info&lt;/em&gt;, among others) and lure the target to visit the malicious server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog/20200312/google.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This reverse proxy sits in the middle of the communication and monitors everything, and when the target has successfully authenticated with the Google service it is relaying, the attackers have automatically grabbed cookies and session keys that allow them to authenticate to the compromised account.&lt;/p&gt;
+
+&lt;p&gt;This technique has been demonstrated before, and various open source security tools have made it available to the information security community. Attackers have adopted reverse proxies too because they are very effective, they do not require crafting any off-looking HTML templates mimicking the original service, and also they allow to bypass most forms of two-factor authentication.&lt;/p&gt;
+
+&lt;p&gt;Hardware security keys, such as &lt;a href=&quot;https://www.yubico.com/products/&quot;&gt;Yubikeys&lt;/a&gt; or &lt;a href=&quot;https://solokeys.com/&quot;&gt;Solo keys&lt;/a&gt;, are the only effective mitigation users can adopt against these forms of phishing attacks. Looking back at all the campaigns our team has investigated and responded to in the last year, there hasn’t been one which wasn’t equipped with the capability to bypass at least some forms of two-factor authentication. Because of this, we need to advocate targeted communities to equip with security keys, and demand service providers which do not yet support it, to implement WebAuthn/U2F soon.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 12 Mar 2020 00:00:00 +0100</pubDate>
+            <link>https://nex.sx//blog/2020/03/12/phishing-malware-attacks-activists-uzbekistan.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2020/03/12/phishing-malware-attacks-activists-uzbekistan.html</guid>
+        </item>
+        
+        <item>
             <title>What To Do For Users At Risk</title>
             <description>&lt;p&gt;If your company offers a product or a service with a sufficiently large user base, chances are you also have users at risk. Journalists, dissidents, and human rights defenders classify as regular consumers to the technology market, despite their peculiar needs. Security firms, software vendors and social media companies, or other service providers, interested in paying particular care to those users might face challenges. Paying attention to their needs, however, is already a great first step, even more so considering they most likely constitute a very small percentage of the whole. Kudos.&lt;/p&gt;
 
@@ -429,46 +454,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Tue, 14 May 2019 00:00:00 +0200</pubDate>
             <link>https://nex.sx//blog/2019/05/14/on-whatsapp-0day-legal-action-nso.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/05/14/on-whatsapp-0day-legal-action-nso.html</guid>
-        </item>
-        
-        <item>
-            <title>Exodus: How the Discovery of a Malware Revealed a Spy Scandal in Italy</title>
-            <description>&lt;p&gt;On Friday 29th Security Without Borders in collaboration with Motherboard published a new investigation into a previously unknown surveillance vendor from Italy called eSurv.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://securitywithoutborders.org/blog/2019/03/29/exodus.html&quot;&gt;https://securitywithoutborders.org/blog/2019/03/29/exodus.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This company, which purported to only be a surveillance cameras manufacturer, in reality has been producing intrusion software (spyware) since at least 2016. We dubbed this spyware “Exodus” after a domain name used as Command &amp;amp; Control.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://motherboard.vice.com/en_us/article/43z93g/hackers-hid-android-malware-in-google-play-store-exodus-esurv&quot;&gt;https://motherboard.vice.com/en_us/article/43z93g/hackers-hid-android-malware-in-google-play-store-exodus-esurv&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;As originally noted by Motherboard through publicly available documents, and as now confirmed by public prosecutor’s offices, this software was in use by law enforcement all over Italy.&lt;/p&gt;
-
-&lt;p&gt;What made this software particularly worrying for us was, firstly, that it was widely distributed through the Google Play Store and publicly accessible for anybody to install. As a matter of fact, hundreds of installations were registered across 25 different copies of the spyware. Secondly, the spyware is able to collect much more information than what is normally mandated by law in Italy. Thirdly, the spyware would establish  unencrypted reverse shells to the Command &amp;amp; Control, that could be prone to man-in-the-middle attacks. Lastly, and even more worryingly in my mind, it would enable terminal access to the device by simply connecting to various fixed TCP port numbers, effectively leaving the phone exposed to further compromise or data tampering by anybody who would share the same network (such as a public Wi-Fi, or potentially even the same cellular network).&lt;/p&gt;
-
-&lt;p&gt;This story gained significant attention on Italian press and received coverage on all major newspapers, online and print, as well as on prime time television news on Saturday. While the initial press coverage wasn’t particularly accurate, it opened up to some interesting and unexpected developments that are still unfolding.&lt;/p&gt;
-
-&lt;p&gt;The prosecutor of Napoli informed the press that an investigation was active on the company and that few days prior to our publication a judge issued a seizure warrant for eSurv and its assets, as well as another company, STM s.r.l.&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;Italian press reports that STM s.r.l. had numerous contracts with public prosecutor’s offices across Italy to setup and maintain the Exodus system they purchased from eSurv. The prosecutor’s office of Benevento recently realized, during yet another apparent malfunction, that the Exodus spyware in their use wasn’t exfiltrating and storing data on the local server in the premises of the office (as mandated by Italian law), but on Amazon cloud instances instead. As a matter of fact, the press reports, the server provided to the public prosecutor’s office wasn’t even equipped with an Operating System, and contained no data at all. Essentially it was an empty box. Additionally, it appears that interception data from invesigations by several other public prosecutor’s offices was stored on this same Amazon instance, and that the companies maintained privileged access.&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;This is wild.&lt;/p&gt;
-
-&lt;p&gt;The Exodus servers are being analyzed and people are being investigated. It is unclear currently what was the purpose and who was the operator of the malicious apps we discovered on the Play Store and how many of the hundreds of victims were intended and how many were accidental.&lt;/p&gt;
-
-&lt;p&gt;More recent reports are now suggesting that the story might go deeper and darker than originally anticipated. The press is currently suggesting that illegal spying might have been operated on behalf of unknown entities&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; and that this investigation is crossing with separate investigations dealing with corruption in Calabria&lt;sup id=&quot;a4&quot;&gt;&lt;a href=&quot;#f4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;By all accounts, it seems that this story is still unfolding. More information will likely follow as more details from the investigations will come to light.&lt;/p&gt;
-
-&lt;p&gt;Hopefully, this case will reinvigorate a much needed debate on the nature of lawful interception intrusion software and the Wild West that is the industry behind it. In these years we have mostly debated on how to properly export these technologies out of Europe, but if anything, this case should highlight the very serious legal, technical, and constitutional issues raised by its current use here.&lt;/p&gt;
-
-&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://www.ilfattoquotidiano.it/2019/04/01/exodus-4-indagati-a-napoli-intercettati-illegalmente-centinaia-di-italiani-dati-giudiziari-salvati-su-un-cloud-amazon/5078359/&quot;&gt;Exodus, 4 indagati a Napoli. Intercettati illegalmente centinaia di italiani: “Dati giudiziari salvati su un cloud Amazon” - Il Fatto Quotidiano&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://www.ilfattoquotidiano.it/2019/04/02/benevento-software-spia-farlocchi-e-server-giudiziari-vuoti-sui-cloud-amazon-anche-le-intercettazioni-di-altre-procure/5079009/&quot;&gt;Benevento, software spia farlocchi e server giudiziari vuoti: sui cloud Amazon anche le intercettazioni di altre procure - Il Fatto Quotidiano&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://roma.corriere.it/notizie/cronaca/19_aprile_01/sospetto-dossieraggi-ricatti-il-software-spia-telefonini-c2347232-54b6-11e9-a9e2-a0d1446d1611.shtml&quot;&gt;Il sospetto di dossieraggi e ricatti con il software spia nei telefonini - Corriere.it&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f4&quot;&gt;&lt;/span&gt;4: &lt;a href=&quot;https://www.corrieredellacalabria.it/regione/cosenza/item/181508-magistrati-e-investigatori-gli-amici-calabresi-del-poliziotto-della-spy-story/&quot;&gt;Magistrati e investigatori, gli amici calabresi del poliziotto della “spy story” - Corriere della Calabria&lt;/a&gt;&lt;/p&gt;
-</description>
-            <pubDate>Thu, 04 Apr 2019 00:00:00 +0200</pubDate>
-            <link>https://nex.sx//blog/2019/04/04/exodus-spy-scandal-italy.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/04/04/exodus-spy-scandal-italy.html</guid>
         </item>
         
     </channel>

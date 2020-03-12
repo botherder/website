@@ -15,8 +15,8 @@
 </head>
 
 <body>
-<div id="particles-js"></div>
-<div class="container">
+<div id="wrapper">
+    <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">Nex</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,8 +50,8 @@
     </nav>
 </div>
 
-<div class="container content">
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="container content">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Dear Machine</h1>
@@ -61,7 +61,7 @@
 <div class="post-content" itemprop="articleBody">
     <p>Web pages are written in a mark-up language called <a href="https://www.w3schools.com/html/default.asp">HTML</a>, which provides a set of instructions to shape and decorate information online.</p>
 
-<p>In HTML you can write invisible <a href="https://www.w3schools.com/html/html_comments.asp">comments</a> between the markers &lt;!– and –&gt;.</p>
+<p>In HTML you can write invisible <a href="https://www.w3schools.com/html/html_comments.asp">comments</a> between the markers <mono><b>&lt;!--</b></mono> and <mono><b>--&gt;</b></mono>.</p>
 
 <p>Comments are annotations to the structure of webpages that remain hidden to you, the viewer. Most often they are reminders to oneself or forgotten snippets of code, other times they are thoughts, words in a secret exchange between the developers and the machine that processes the code of the websites you visit, telling stories of how the Web came to be.</p>
 
@@ -77,125 +77,14 @@
 
 </article>
 
+    </div>
+    <div class="container">
+    <div class="container" id="footer">
+    <div><a class="cc" style="text-decoration: none;" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> <i class="fab fa-creative-commons-nc"></i></a></div>
+    <div style="font-size: 16px;">Copyright &copy;2013-2020 <a href="https://nex.sx">Claudio <i>"nex"</i> Guarnieri</a>. The content of this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA 4.0)</a>.</div>
 </div>
 
-<script src="/assets/js/jquery-3.2.1.min.js"></script>
-<script src="/assets/js/popper.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-
-<!-- <script src="/assets/js/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-    "particles": {
-        "number": {
-            "value": 40,
-            "density": {
-                "enable": true,
-                "value_area": 1000
-            }
-        },
-        "color": {
-            "value": "#e1e1e1"
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#ffffff"
-            },
-            "polygon": {
-                "nb_sides": 5
-            },
-            "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-            }
-        },
-        "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-            }
-        },
-        "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#666666",
-            "opacity": 0.4,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "repulse"
-            },
-            "onclick": {
-                "enable": false,
-                "mode": "push"
-            },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-                "distance": 400,
-                "line_linked": {
-                    "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 200,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-        }
-    },
-    "retina_detect": true
-});
-</script> -->
-
+    </div>
+</div>
 </body>
 </html>

@@ -31,10 +31,11 @@
 }
 
 /* Style */
-body {
+html, body {
     background-color: #fff;
     font-size: 18px;
     color: #333;
+    height:100%;
 }
 .mono {
     font-family: monospace;;
@@ -42,6 +43,9 @@ body {
 img {
     width: 100%;
     z-index: 100;
+}
+.content {
+    padding-bottom: 80px;
 }
 .content a, a:visited {
     color: black;
@@ -92,9 +96,8 @@ blockquote {
     /*font-family: 'Lota';*/
 }
 .post img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 20px;
-    margin-bottom: 5px;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 30px 70px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
 }
 .post p {
     margin-bottom: 1.5em;
@@ -124,4 +127,22 @@ blockquote {
 }
 .post-tags a, a:visited {
     text-decoration: none;
+}
+#wrapper {
+    position: relative;
+    min-height:100%;
+}
+#footer {
+    font-size: 18px;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+}
+#footer a, #footer a:visited {
+    color: #666;
+    text-decoration: underline;;
+}
+#footer a:hover {
+    color: #666;
+    text-decoration: line-through;
 }

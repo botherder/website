@@ -6,12 +6,12 @@ media: Digital installation
 description: Interactive installation exploring technologies of surveillance used to monitor human rights defenders
 permalink: art/gallery-of-surveillance/
 categories: art
-thumbnail: /assets/art/gallery-of-surveillance/morocco_rcs_mamfakinch2.png
+thumbnail: /assets/art/gallery-of-surveillance/bahrain_finfisher_alaa_shehabi.png
 ---
 {:.center}
 *A first version of this work is featured in the [isthisit? issue 5](http://www.isthisitisthisit.com/issue-05) book, launched at "[Terms and Condition May Apply](http://www.isthisitisthisit.com/terms-and-conditions-may-apply)" exhibition at Annka Kultys Gallery, London, in August 2018.*
 
-*A video installation of this work, named "Faces of Surveillance", was exhibited at the "[Museum of Modern Malware](https://labac.dev/)" at DEFCON, Las Vegas, in August 2019.*
+*A video installation of this work, named "Faces of Surveillance", was exhibited at the "[Museum of Modern Malware](https://www.momal.art/)" at DEFCON, Las Vegas, in August 2019.*
 
 {:.center}
 ![](/assets/art/gallery-of-surveillance/pakistan_keylogger.gif)
