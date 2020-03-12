@@ -137,6 +137,7 @@ blockquote {
     color: #666;
     position: absolute;
     bottom: 0;
+    padding-bottom: 20px;
 }
 #footer a, #footer a:visited {
     color: #666;
