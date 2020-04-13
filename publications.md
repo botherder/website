@@ -4,7 +4,6 @@ title: Speaking & Publications
 permalink: /publications/
 ---
 
-
 ### Original Research
 
 These are reports that I have authored or co-authored that outline long research and investigative efforts.
@@ -50,10 +49,6 @@ These are reports that I have authored or co-authored that outline long research
 
 ### Books, Articles &amp; Columns
 
-I contributed the closing chapter to the book [Meinungsmache im Netz: Fake News, Bots und Hate Speech](https://steidl.de/Buecher/Meinungsmache-im-Netz-Fake-News-Bots-und-Hate-Speech-4344505458.html), which can also be found on [Amazon](https://www.amazon.de/Meinungsmache-Netz-Fake-News-Speech/dp/3958295258/).
-
-<img src="/assets/pictures/book.png" />
-
 I occasionally write articles and opinion pieces. You can [contact me](/contacts/) if you would like me to write for you.
 
 * [Dissidents Have Been Abandoned and Besieged Online](https://motherboard.vice.com/en_us/article/bj5jvw/dissidents-abandoned-human-rights-iranian-surveillance-and-hacking), *Motherboard*, 13 Feb 2018
@@ -65,6 +60,10 @@ I occasionally write articles and opinion pieces. You can [contact me](/contacts
 * [India and #GoIBlocks: A Lesson for ISPs When Facing Censorship Orders](https://archive.is/c9Cyc), *Global Voices*, 14 Jan 2015
 * [What Protesters in Hong Kong (and Anywhere Else) Should Know About FireChat](https://archive.is/EPjjJ), *Slate*, 02 Oct 2014
 * [Deutsche Firmen verdienen Millionen mit &Uuml;berwachungstechnik](https://archive.is/oq03O), *Die Zeit*, 05 Sept 2014
+
+I contributed the closing chapter to the book [Meinungsmache im Netz: Fake News, Bots und Hate Speech](https://steidl.de/Buecher/Meinungsmache-im-Netz-Fake-News-Bots-und-Hate-Speech-4344505458.html), which can also be found on [Amazon](https://www.amazon.de/Meinungsmache-Netz-Fake-News-Speech/dp/3958295258/).
+
+<img src="/assets/pictures/book.png" />
 
 ---
 
