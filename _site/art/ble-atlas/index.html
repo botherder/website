@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="flattr:id" content="4x1wyq">
+<title>BLE ATLAS - Nex</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/css/nex.css">
+<link rel="canonical" href="https://nex.sx/art/ble-atlas/">
+<link href="https://nex.sx/feed.xml" rel="alternate" type="application/atom+xml">
+</head>
+
+<body>
+<div id="wrapper">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Nex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/bio/">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/publications/">Speaking &amp; Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/newsletter/">Newsletter</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/blog/">Blog</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/art/">Art</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts/">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/support/"><i class="fas fa-heart"></i> Support Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    <div class="container content">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<header class="post-header">
+    <h1 class="post-title" itemprop="name headline">BLE ATLAS</h1>
+    <!-- <p class="post-meta"><time datetime="2020-04-20T00:00:00+02:00" itemprop="datePublished">Apr 20, 2020</time></p> -->
+</header>
+
+<div class="post-content" itemprop="articleBody">
+    <p class="center"><img src="/assets/art/ble-atlas/ble-atlas-2.png" style="box-shadow: none; margin-bottom: 0;" /></p>
+
+<p>COVID-19 sparked initiatives to digitalize contact tracing. <a href="https://www.apple.com/covid19/contacttracing/">Apple and Google proposed a framework</a> to use particular types of Bluetooth Low Energy (BLE) beacons called <mono>ADV_NONCONN_IND</mono>. Apps leveraging this framework would empower smartphones to constantly broadcasts to their neighbours their relative proximity, in order to be later alerted if any observed smartphone’s owner was diagnosed positive. As with any new forms of tracking, digital contact tracing also raises questions, some of which <a href="https://nex.sx/blog/2020/04/14/covid-19-digital-contact-tracing-is-upon-us.html">I recently addressed in my newsletter</a>.</p>
+
+<p>BLE ATLAS is a project to explore BLE beacons, by visualizing in real-time <mono>ADV_NONCONN_IND</mono> beacons received by a Bluetooth sensor I am running. You can see the results live at <a href="https://ble-atlas.nex.sx">https://ble-atlas.nex.sx</a>.</p>
+
+<p>At the center is the sensor. Circles appearing in its surroundings represent beacons it received. The distance from the center is an (extremely rough) approximation of the distance of the emitting device based on the beacon’s signal strength (expressed in <a href="https://en.wikipedia.org/wiki/DBm">dBm</a>). Typically, signals range between a strength of -12 dBm to -95/100 dBm. The size of the circle indicates the size of the transmitted data. Red circles indicate beacons with a reasonably high signal strength, which could have been emitted within close vicinities.</p>
+
+<p>Because of the inability to easily triangulate the physical location of the transmitting devices, the beacons’ radial positions in the visualization are randomized.</p>
+
+<iframe src="https://player.vimeo.com/video/409738014" width="640" height="409" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/409738014">BLE ATLAS</a> from <a href="https://vimeo.com/botherder">Nex</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+</div>
+
+<div class="text-center"><a href="/support/"><i class="fas fa-heart"></i> Support my work</a></div>
+
+</article>
+
+    </div>
+    <div class="container">
+    <div id="footer">
+    <div><a class="cc" style="text-decoration: none;" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> <i class="fab fa-creative-commons-nc"></i></a></div>
+    <div style="font-size: 16px;">Copyright &copy;2013-2020 <a href="https://nex.sx">Claudio <i>"nex"</i> Guarnieri</a>. The content of this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA 4.0)</a>.</div>
+</div>
+
+    </div>
+</div>
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
