@@ -61,16 +61,22 @@
 <div class="post-content" itemprop="articleBody">
     <p class="center"><img src="/assets/art/ble-atlas/ble-atlas-2.png" style="box-shadow: none; margin-bottom: 0;" /></p>
 
-<p>COVID-19 sparked initiatives to digitalize contact tracing. <a href="https://www.apple.com/covid19/contacttracing/">Apple and Google proposed a framework</a> to use particular types of Bluetooth Low Energy (BLE) beacons called <mono>ADV_NONCONN_IND</mono>. Apps leveraging this framework would empower smartphones to constantly broadcasts to their neighbours their relative proximity, in order to be later alerted if any observed smartphone’s owner was diagnosed positive. As with any new forms of tracking, digital contact tracing also raises questions, some of which <a href="https://nex.sx/blog/2020/04/14/covid-19-digital-contact-tracing-is-upon-us.html">I recently addressed in my newsletter</a>.</p>
+<p>COVID-19 sparked initiatives to digitalize contact tracing. Many countries are moving quickly to develop and deploy contact tracing apps, facing criticism from privacy advocates due to the risks associated with granting additional surveillance powers in a state of emergency such as this. <a href="https://www.apple.com/covid19/contacttracing/">Apple and Google proposed a framework</a> to use particular types of Bluetooth Low Energy (BLE) beacons called <mono>ADV_NONCONN_IND</mono>, in a self-described “Privacy-Preserving” protocol. Apps leveraging this framework would empower smartphones to constantly broadcasts to their neighbours their relative proximity, in order to be later alerted if any observed smartphone’s owner was diagnosed positive. As with any new forms of tracking, digital contact tracing also raises questions, some of which <a href="https://nex.sx/blog/2020/04/14/covid-19-digital-contact-tracing-is-upon-us.html">I recently addressed in my newsletter</a>.</p>
 
-<p>BLE ATLAS is a project to explore BLE beacons, by visualizing in real-time <mono>ADV_NONCONN_IND</mono> beacons received by a Bluetooth sensor I am running. You can see the results live at <a href="https://ble-atlas.nex.sx">https://ble-atlas.nex.sx</a>. The system does not store any data, and it does not visualize any identifiable information or content of the transmissions.</p>
+<p>BLE ATLAS is a project to explore BLE beacons, by visualizing in real-time <mono>ADV_NONCONN_IND</mono> beacons received by a Bluetooth sensor I am running. This project is both an experiment as well as a digital work. It attempts to analyze Bluetooth surroundings, expose the unexpected amount of transmissions, and analyze inconsistencies in the light of the upcoming surge in use. At the same time, BLE ATLAS attempts to <em>subvert</em> the supposed locality of these transmissions, and <em>betrays</em> their expected ephemerality by wilfully live-streaming them to the Internet. The system does not store any data, and it does not visualize any identifiable information or content of the transmissions.</p>
+
+<div class="text-center" style="border:2px solid black;padding: 1em;font-size: 20px;margin-top: 2em;margin-bottom: 2em;"><a href="https://ble-atlas.nex.sx"><b>Access BLE ATLAS <i class="fas fa-broadcast-tower"></i></b></a></div>
 
 <p>At the center is the sensor. Circles appearing in its surroundings represent beacons it received. The distance from the center is an (extremely rough) approximation of the distance of the emitting device based on the beacon’s signal strength (expressed in <a href="https://en.wikipedia.org/wiki/DBm">dBm</a>). The size of the circle indicates the size of the transmitted data. Red circles indicate beacons with a reasonably high signal strength, which could have been emitted within close vicinities.</p>
 
-<p>Because of the inability to easily triangulate the physical location of the transmitting devices, the beacons’ radial positions in the visualization are randomized.</p>
-
 <iframe src="https://player.vimeo.com/video/409738014" width="640" height="409" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
 <p><a href="https://vimeo.com/409738014">BLE ATLAS</a> from <a href="https://vimeo.com/botherder">Nex</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<p>Because of the inability to easily triangulate the physical location of the transmitting devices, the beacons’ radial positions in the visualization are randomized.</p>
+
+<h3 id="press">Press</h3>
+
+<p><a href="https://www.vice.com/en_us/article/4agz9j/bluetooth-low-energy-contact-tracing-coronavirus">This Website Shows How Bluetooth, Used in Coronavirus Tracing, Is Everywhere</a> - Motherboard</p>
 
 </div>
 
