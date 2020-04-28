@@ -51,6 +51,7 @@ These are reports that I have authored or co-authored that outline long research
 
 I occasionally write articles and opinion pieces. You can [contact me](/contacts/) if you would like me to write for you.
 
+* [Covid-19 e app di Contact Tracing: privacy, tecnologia e gestione dell’emergenza](https://www.amnesty.it/covid-19-e-app-di-contact-tracing-privacy-tecnologia-e-gestione-dellemergenza/) (Italian), *Amnesty International Italia*, 24 Apr 2020
 * [Dissidents Have Been Abandoned and Besieged Online](https://motherboard.vice.com/en_us/article/bj5jvw/dissidents-abandoned-human-rights-iranian-surveillance-and-hacking), *Motherboard*, 13 Feb 2018
 * [Technology must foster, not hinder, free speech](http://www.dw.com/en/technology-must-foster-not-hinder-free-speech/a-39654972), *Deutsche Welle*, 13 Jul 2017
 * [Online Voting Is a Terrible Idea](https://motherboard.vice.com/en_us/article/online-voting-is-a-terrible-idea), *Motherboard*, 09 Jun 2017
