@@ -4,23 +4,15 @@ title: Contacts
 permalink: /contacts/
 ---
 
+### End-to-end encrypted messaging
+
+I can also be contacted over [Wire](https://wire.com) or [Keybase](https://keybase.io) at:  
+<span class="mono"><b>@nex</b></span>
+
 ### Email
 
-You can write me [encrypted](#pgp) emails at:  
-<span class="mono">nex@nex.sx</span>
-
-If you are a journalist, activist, or human rights defender and you believe you have received suspicious emails, messages, or malware you can directly forward them to me to:  
-<span class="mono">malware@nex.sx</span>
-
-### Chat
-
-<!--You can find me on [Ricochet](https://ricochet.im) at:  
-<span class="mono">ricochet:rxrxxtbz5vqaatox</span>-->
-
-You can find me on [Wire](https://wire.com) or [Keybase](https://keybase.io) at:  
-<span class="mono">@nex</span>
-
-### PGP
+You can write me encrypted emails at:  
+<span class="mono"><b>nex@nex.sx</b></span>
 
 My PGP fingerprint is:  
 <span class="mono">0521 6F3B 8684 8A30 3C2F  E37D D166 F166 7359 D880</span>

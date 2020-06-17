@@ -1,13 +1,15 @@
 ---
 layout: page
-title: Speaking & Publications
+title: Talks & Publications
 permalink: /publications/
 ---
 
 ### Original Research
 
-These are reports that I have authored or co-authored that outline long research and investigative efforts.
+These are investigative and technical research reports I authored or co-authored:
 
+* [Bahrain, Kuwait and Norway contact tracing apps among most dangerous for privacy](https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/), *Amnesty International*, 16 June 2020
+* [Qatar: Contact tracing app security flaw exposed sensitive personal details of more than one million](https://www.amnesty.org/en/latest/news/2020/05/qatar-covid19-contact-tracing-app-security-flaw/), *Amnesty International*, 26 May 2020
 * [Morocco: Human Rights Defenders Targeted with NSO Group’s Spyware](https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/), *Amnesty International*, 10 October 2019
 * [Evolving Phishing Attacks Targeting Journalists and Human Rights Defenders from the Middle-East and North Africa](https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/), *Amnesty International*, 21 August 2019
 * [Exodus: New Android Spyware Made in Italy](https://securitywithoutborders.org/blog/2019/03/29/exodus.html), *Security Without Borders*, 29 March 2019
@@ -73,6 +75,7 @@ I contributed the closing chapter to the book [Meinungsmache im Netz: Fake News,
 For speaking engagements, please find my contact details [here](/contact/).  
 Following is a selection of talks I have given:
 
+* [Covid-19 e app di Contact Tracing](https://www.youtube.com/watch?v=3no54OfeaPY) *(Italian)*, in discussione con Carola Frediani e Tina Marinari, *Amnesty International*, June 2020
 * [Hacking Democracy: Power and Propaganda in the Digital Age](https://www.youtube.com/watch?v=OjejygTTZ8c), in discussion with Garry Kasparov, *Re:publica 2017*, May 2017
 * [Hacking the World](https://www.youtube.com/watch?v=KF860QYZzUE), *33rd Chaos Communication Congress*, December 2016
 * [Iran and the Soft War for Internet Dominance](https://www.youtube.com/watch?v=4TBSK9YgI8U), *BlackHat USA 2016*, August 2016

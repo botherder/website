@@ -8,6 +8,39 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>COVID-19 Apps and New Forms of Surveillance</title>
+            <description>&lt;p&gt;Yesterday Amnesty International published the findings of a research project our Security Lab conducted over the last few weeks of COVID-19 contact tracing apps deployed in several countries between Europe and Middle-East and North Africa.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/&quot;&gt;https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Among those we identified Kuwait’s Shlonik, Bahrain’s BeAware, and Norway’s Smittestopp among the most problematic. These three apps were singled out because of their ability to live stream GPS coordinates of users’ devices every few minutes. In the case of Kuwait and Norway, the apps also conduct Bluetooth proximity tracking and upload records of contacts between users.&lt;/p&gt;
+
+&lt;p&gt;On Monday, after a back and forth with the Norwegian government, and after the national Data Protection Authority sent a letter requesting clarifications, Smittestopp was temporarily put on pause and all data collected thus far was deleted.&lt;/p&gt;
+
+&lt;p&gt;Data from Bahrain’s BeAware was also connected to a show on national television called “Are you at home?”, where randomly selected users of the app were called over the phone live on air and those found to be at home could win prize money.&lt;/p&gt;
+
+&lt;p&gt;In May we already highlighted the case of Qatar’s EHTERAZ app which, besides being able to automatically collect Bluetooth “contacts” and optionally enable GPS tracking as well, we found to suffer a major privacy and security flaw in the generation of QR codes scanned by police patrols and checkpoints to ensure users are respecting quarantine measures. Our team discovered that anyone with the sufficient technical know-how would have been capable to extract the QR code for all EHTERAZ users, and obtain the names, designated confinement location, health status, and more, tied to Qatari national ID numbers. This issue was exacerbated by the consistent format of these ID numbers, which makes them trivial to enumerate and probe in bulk. While Qatari authorities immediately took action to minimize the exposure, and eventually rolled out an update to the app, privacy concerns remain.&lt;/p&gt;
+
+&lt;p&gt;We found many flavors of contact tracing apps. While most follow a centralized architecture, some automatically upload data recorded by the apps, others only do so upon request of health authorities or voluntary symptom reporting by the users. Many, such as in the case of Kuwait, Bahrain, and Qatar, require national ID numbers upon registration, allowing authorities to directly connect records to specific individuals. Others, such as in the case of Norway, only require a valid phone number.&lt;/p&gt;
+
+&lt;p&gt;All in all, concerns over necessity and proportionality of the invasion of people’s right to privacy can be found across the board. While the efficacy of these measures is still highly debated, privacy-preserving models are already available and should be explored first. However, many governments rushed to roll out apps seemingly without proper considerations for human rights. Some were even not provided with any privacy policy at all.&lt;/p&gt;
+
+&lt;p&gt;Amnesty is demanding governments to be transparent about their plans. COVID-19 contact tracing apps should remain voluntary, free from incentives and penalties. We are not only concerned about the potentially unnecessary invasive designs of some of these apps, but also of potential discriminatory practices that could stem from an inequitable access to healthcare if these apps become too central to government’s response to the pandemic.&lt;/p&gt;
+
+&lt;p&gt;Personally, I worry the introduction of some of these apps, particularly in certain regions, might lead to a normalization of excessive tracking that surely will have some lasting effects.&lt;/p&gt;
+
+&lt;p&gt;If interested, you can find some technical notes from our analyses here:&lt;br /&gt;
+&lt;a href=&quot;https://github.com/amnestytech/covid19-apps&quot;&gt;https://github.com/amnestytech/covid19-apps&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And a Twitter thread highlighting some of the most interesting discoveries we made:&lt;br /&gt;
+&lt;a href=&quot;https://twitter.com/botherder/status/1272782015386050562&quot;&gt;https://twitter.com/botherder/status/1272782015386050562&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Wed, 17 Jun 2020 00:00:00 +0200</pubDate>
+            <link>https://nex.sx//blog/2020/06/17/covid19-apps-new-forms-of-surveillance.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2020/06/17/covid19-apps-new-forms-of-surveillance.html</guid>
+        </item>
+        
+        <item>
             <title>COVID-19 Digital Contact Tracing Is Upon Us</title>
             <description>&lt;p&gt;Just like everybody else, I am also following the ongoing developments on digital contact tracing as an aid to contrast the COVID-19 pandemic. Perhaps to nobly oppose the initial calls for a dystopic panopticon by certain authorities, over the last few weeks universities, independent groups, and all sorts of private and public consortiums authored proposals for the development of contact tracing apps. Few days ago Google and Apple historically joined forces to seal the deal with a self-described &lt;a href=&quot;https://www.apple.com/covid19/contacttracing/&quot;&gt;“Privacy-Preserving Contact Tracing”&lt;/a&gt; framework, taking the upperhand and anticipating probable regulations.&lt;/p&gt;
 
@@ -405,54 +438,6 @@ It goes in to details on how phishing attacks work and what are the available mi
             <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
             <link>https://nex.sx//blog/2019/08/23/evolving-phishing-attacks-mena.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/08/23/evolving-phishing-attacks-mena.html</guid>
-        </item>
-        
-        <item>
-            <title>More on Mobile Security and Device Integrity</title>
-            <description>&lt;p&gt;In my previous newsletter&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I comment on the recent news regarding the WhatsApp exploits discovered used by NSO Group and I marginally touch on the difficulties we encounter in confirming infections of mobile devices, particularly because of the tight security mitigations implemented by manufacturers such as Google and Apple.&lt;/p&gt;
-
-&lt;p&gt;Some additional debate and commentary appeared on social media, particularly after an article published by Motherboard&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; expanding on this particular issue, and quoting various security researchers as well as my newsletter. Because it is an interesting and contentious topic, I figured I could expand on my point. Forgive the higher frequency of my writing, but it’s dicated by timeliness.&lt;/p&gt;
-
-&lt;p&gt;In my previous newsletter, I wrote:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“… these security controls have made mobile devices extremely difficult to inspect, especially remotely, and particularly for those of us working in human rights organizations lacking access to adequate forensics technology.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And continued:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Quite frankly, we are on the losing side of a disheartening asymmetry of capabilities that favors attackers over us, defenders.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;What do I mean by that?&lt;/p&gt;
-
-&lt;p&gt;What perhaps many don’t realize is how resourceless we are, as technologists, when asked to respond to a suspected attack or to inspect a mobile device of an individual at risk who might have been targeted. For example, if a human rights defender suspects they are being surveilled and they bring their iPhone for inspection, all we can mostly do is search for suspicious messages and perhaps monitor the outgoing network traffic for the amount of time available to us (generally not a lot) hoping to get lucky enough to spot some suspicious traces at the right time. Obviously, when there is a significant distance or travel restrictions, our ability to intervene reduces drastically.&lt;/p&gt;
-
-&lt;p&gt;Under some circumstances there are exceptions and we might be able to do more. More commonly, however, technical, logistical and time constraints do not allow for a meaningful analysis.&lt;/p&gt;
-
-&lt;p&gt;Although the tight security controls baked into modern mobile devices are a net positive and significantly raise the costs for attackers, when the threat model of an individual at risk includes a nation state or even a law enforcement agency among their adversaries, these limitations play into the losing asymmetry of capabilities I mentioned in my previous newsletter.&lt;/p&gt;
-
-&lt;p&gt;Why? Because various companies out there are resourceful enough to acquire the necessary talent and the necessary technology (sometimes illegally&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;) and research and develop bypasses to smartphones’ security mitigations. Companies such as NSO Group, or even Cellebrite&lt;sup id=&quot;a4&quot;&gt;&lt;a href=&quot;#f4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; and GrayShift&lt;sup id=&quot;a5&quot;&gt;&lt;a href=&quot;#f5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, provide expensive products and services to States, which can essentially exercise an hegemonic power over the subversion of modern mobile devices for offensive purposes. In other words, there are tools available to law enforcement and intelligence agencies to break into an iPhone unknowingly to its owner, while there is very little available to us to inspect a smartphone even when the owner is willing to unlock it in front of us. I am sure it is superflous to explain why exclusively relying on law enforcement agencies or manufacturers is often not scalable or simply not possible.&lt;/p&gt;
-
-&lt;p&gt;Regardless of the legitimacy or illegitimacy of this imbalance, I believe it is an objective reality.&lt;/p&gt;
-
-&lt;p&gt;The resulting question then is: what can be done to enable people (especially individuals at risk and their support networks) to obtain more agency over their own mobile devices? Modern smartphones are very closed system, and perhaps for the owners’ own good. Balancing a product’s default security hardening with more access for its owner is not trivial. Some on social media rightfully argued&lt;sup id=&quot;a6&quot;&gt;&lt;a href=&quot;#f6&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; that opening up access for third-party security vendors to more closely inspect mobile devices will most likely result in that same access abused by malicious actors for offensive purposes. I agree. However, I also believe that more needs to be done (or at least explored) to provide at least some ability for consumers to independently verify the integrity of their devices. Even only within boundaries and with tools designed by the manufacturers.&lt;/p&gt;
-
-&lt;p&gt;Other than the obvious technical value of being able to determine whether a device is being tampered with (at any time, and under the owner’s own security and personal safety requirements) and adapt one’s secure communications strategy, enabling individuals at risk to learn whether their smartphones are being used to surveil them can also be an extremely important canary in the coalmine to alert them, and to contextualize their current exposure to personal risk.&lt;/p&gt;
-
-&lt;p&gt;What I’m left to wonder is whether some of these changes would be technically and economically justifiable for manufacturers, in contrast to the needs of a larger consumer base and the interests of shareholders. I don’t know. I suppose that is the unfortunate result of the largely monolithic technological ecosystem in which we live.&lt;/p&gt;
-
-&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://nex.sx/blog/2019/05/14/on-whatsapp-0day-legal-action-nso.html&quot;&gt;On the WhatsApp 0day and legal action against NSO Group - Nex&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://www.vice.com/en_us/article/pajkkz/its-almost-impossible-to-tell-if-iphone-has-been-hacked&quot;&gt;It’s Almost Impossible to Tell if Your iPhone Has Been Hacked - VICE&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://motherboard.vice.com/en_us/article/gyakgw/the-prototype-dev-fused-iphones-that-hackers-use-to-research-apple-zero-days&quot;&gt;The Prototype iPhones That Hackers Use to Research Apple’s Most Sensitive Code - VICE&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f4&quot;&gt;&lt;/span&gt;4: &lt;a href=&quot;https://www.washingtonpost.com/world/asia_pacific/security-tech-companies-once-flocked-to-myanmar-one-firms-tools-were-used-against-two-journalists-/2019/05/04/d4e9f7f0-5b5d-11e9-b8e3-b03311fbbbfe_story.html&quot;&gt;Security-tech companies once flocked to Myanmar. One firm’s tools were used against two journalists&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f5&quot;&gt;&lt;/span&gt;5: &lt;a href=&quot;https://www.forbes.com/sites/thomasbrewster/2018/03/05/apple-iphone-x-graykey-hack/&quot;&gt;Mysterious $15,000 ‘GrayKey’ Promises To Unlock iPhone X For The Feds&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f6&quot;&gt;&lt;/span&gt;6: &lt;a href=&quot;https://twitter.com/DidymaWorks/status/1128314170057748491&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
-</description>
-            <pubDate>Wed, 15 May 2019 00:00:00 +0200</pubDate>
-            <link>https://nex.sx//blog/2019/05/15/more-on-mobile-security-and-device-integrity.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/05/15/more-on-mobile-security-and-device-integrity.html</guid>
         </item>
         
     </channel>

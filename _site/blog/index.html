@@ -26,22 +26,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/bio/">About</a>
+                    <a class="nav-link" href="/bio/"><i class="fas fa-info-circle"></i> About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/publications/">Speaking &amp; Publications</a>
+                    <a class="nav-link" href="/publications/"><i class="fas fa-book"></i> Talks &amp; Publications</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/newsletter/">Newsletter</a>
+                    <a class="nav-link" href="/newsletter/"><i class="far fa-newspaper"></i> Newsletter</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="/blog/">Blog</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/art/">Art</a>
+                    <a class="nav-link" href="/art/"><i class="fas fa-palette"></i> Art</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacts/">Contacts</a>
+                    <a class="nav-link" href="/contacts/"><i class="far fa-envelope"></i> Contact Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/support/"><i class="fas fa-heart"></i> Support Me</a>
@@ -65,34 +65,36 @@
 
     <header class="post-header">
         Latest entry:
-        <a href="/blog/2020/04/14/covid-19-digital-contact-tracing-is-upon-us.html"><h1 class="post-title" itemprop="name headline">COVID-19 Digital Contact Tracing Is Upon Us</h1></a>
-        <p class="post-meta"><time datetime="2020-04-14T00:00:00+02:00" itemprop="datePublished">Apr 14, 2020</time><span class="post-tags" style="margin-left: 1em;"><a href="/newsletter/">newsletter</a></span></p>
+        <a href="/blog/2020/06/17/covid19-apps-new-forms-of-surveillance.html"><h1 class="post-title" itemprop="name headline">COVID-19 Apps and New Forms of Surveillance</h1></a>
+        <p class="post-meta"><time datetime="2020-06-17T00:00:00+02:00" itemprop="datePublished">Jun 17, 2020</time><span class="post-tags" style="margin-left: 1em;"><a href="/newsletter/">newsletter</a></span></p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-        <p>Just like everybody else, I am also following the ongoing developments on digital contact tracing as an aid to contrast the COVID-19 pandemic. Perhaps to nobly oppose the initial calls for a dystopic panopticon by certain authorities, over the last few weeks universities, independent groups, and all sorts of private and public consortiums authored proposals for the development of contact tracing apps. Few days ago Google and Apple historically joined forces to seal the deal with a self-described <a href="https://www.apple.com/covid19/contacttracing/">“Privacy-Preserving Contact Tracing”</a> framework, taking the upperhand and anticipating probable regulations.</p>
+        <p>Yesterday Amnesty International published the findings of a research project our Security Lab conducted over the last few weeks of COVID-19 contact tracing apps deployed in several countries between Europe and Middle-East and North Africa.</p>
 
-<p>Any digital contact tracing proposal, be it more or less respecting of privacy and human rights, demands high scrutiny. Are governments even taking basic public health and containment measures while advocating for more surveillance powers? Is digital contact tracing even necessary? Is it proportionate?</p>
+<p><a href="https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/">https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/</a></p>
 
-<p>Some of these questions can’t be answered yet, because we live in unprecedented circumstances in an unprecedented inter-connected world. There is no evidence to neither support nor dismiss the merit of digital contact tracing, and that puts us in an awkward spot. Navigating the conflict between allowing for additional forms of tracking and accepting a technology that might benefit public health is complicated. Having to decide quickly makes it all even more daunting.</p>
+<p>Among those we identified Kuwait’s Shlonik, Bahrain’s BeAware, and Norway’s Smittestopp among the most problematic. These three apps were singled out because of their ability to live stream GPS coordinates of users’ devices every few minutes. In the case of Kuwait and Norway, the apps also conduct Bluetooth proximity tracking and upload records of contacts between users.</p>
 
-<p>And just like everybody else, I am also wondering about the societal impact, the inequity, the technological divide, the epidemiological science, and all the other dividing factors in this debate. We are Internet people, opinionated by design. Yet, despite strongly believing these factors to be of much higher importance than technical details, I am going to recuse myself from debating those issues here and concentrate on the geeky bits instead. (You can check Amnesty’s <a href="https://www.amnesty.org/download/Documents/POL3020812020ENGLISH.pdf">joint letter</a> addressing some of the big questions.)</p>
+<p>On Monday, after a back and forth with the Norwegian government, and after the national Data Protection Authority sent a letter requesting clarifications, Smittestopp was temporarily put on pause and all data collected thus far was deleted.</p>
 
-<p>While Bluetooth-based contact tracing was being proposed by <a href="https://github.com/DP-3T/documents">different</a> <a href="https://www.covid-watch.org/">initiatives</a> already, Apple’s and Google’s partnership comes as a stamp of approval of Silicon Valley and will perhaps close the debate around which underlying technology to use. Cellular towers data, Wi-Fi, GPS and similar alternatives are inadequate, and ACLU provides a good explainer for why <a href="https://www.aclu.org/report/aclu-white-paper-limits-location-tracking-epidemic">here</a>.</p>
+<p>Data from Bahrain’s BeAware was also connected to a show on national television called “Are you at home?”, where randomly selected users of the app were called over the phone live on air and those found to be at home could win prize money.</p>
 
-<p>With Bluetooth, contact tracing apps would constantly emit and receive beacons (Bluetooth Low Energy broadcasts, to be precise) containing unique identifiers, and store records of all transmissions. When someone is diagnosed with COVID-19, all their identifiers emitted in the previous 14 days would be uploaded to a central server. Through the app, all other users would regularly download an up-to-date list from the central server, compare it to their local copies of received beacons, and therefore determine whether they would have been exposed to an infected person. It sounds like a simple and elegant system, and some strong cryptography could make it resistant to some forms of deanonymization, and could attempt to prevent linkability.</p>
+<p>In May we already highlighted the case of Qatar’s EHTERAZ app which, besides being able to automatically collect Bluetooth “contacts” and optionally enable GPS tracking as well, we found to suffer a major privacy and security flaw in the generation of QR codes scanned by police patrols and checkpoints to ensure users are respecting quarantine measures. Our team discovered that anyone with the sufficient technical know-how would have been capable to extract the QR code for all EHTERAZ users, and obtain the names, designated confinement location, health status, and more, tied to Qatari national ID numbers. This issue was exacerbated by the consistent format of these ID numbers, which makes them trivial to enumerate and probe in bulk. While Qatari authorities immediately took action to minimize the exposure, and eventually rolled out an update to the app, privacy concerns remain.</p>
 
-<p>However, Bluetooth has its pitfalls too. Turns out it isn’t trivial to digitally quantify our human contacts. Being a radio protocol, Bluetooth is subject to environmental factors which could improve, or most likely degrade its signal strength used to approximate the physical distance to nearby devices. If you are in a park, or in a high-density housing project, if you have thick walls, or a stuffed backpack, if you are separated by a window, the determined “exposure” will most likely be skewed by your surroundings.</p>
+<p>We found many flavors of contact tracing apps. While most follow a centralized architecture, some automatically upload data recorded by the apps, others only do so upon request of health authorities or voluntary symptom reporting by the users. Many, such as in the case of Kuwait, Bahrain, and Qatar, require national ID numbers upon registration, allowing authorities to directly connect records to specific individuals. Others, such as in the case of Norway, only require a valid phone number.</p>
 
-<p>I suspect a lot of experimentation would be required to calibrate this system correctly, and to verify its reliability under the more disparate conditions. Is this increased radio noise going to lead to unintended consequences? How reliable would it be in high-density areas?</p>
+<p>All in all, concerns over necessity and proportionality of the invasion of people’s right to privacy can be found across the board. While the efficacy of these measures is still highly debated, privacy-preserving models are already available and should be explored first. However, many governments rushed to roll out apps seemingly without proper considerations for human rights. Some were even not provided with any privacy policy at all.</p>
 
-<p>Tight controls would most likely need to be established by the operators in order to prevent pranks, jamming, flooding, and isolate other forms of voluntary as well as involuntary interference.</p>
+<p>Amnesty is demanding governments to be transparent about their plans. COVID-19 contact tracing apps should remain voluntary, free from incentives and penalties. We are not only concerned about the potentially unnecessary invasive designs of some of these apps, but also of potential discriminatory practices that could stem from an inequitable access to healthcare if these apps become too central to government’s response to the pandemic.</p>
 
-<p>Apple and Google’s proposal lacks details on implementation and roll-out. As it stands, it seems their framework would be used as a foundation by national health authorities to build their own apps on. Who is then going to operate the central “diagnosis servers”? How? Are the apps going to be audited and approved by Apple and Google? How would access to local databases be protected? How easily could this data be forensically extracted and how could it be misused then?</p>
+<p>Personally, I worry the introduction of some of these apps, particularly in certain regions, might lead to a normalization of excessive tracking that surely will have some lasting effects.</p>
 
-<p>There are many unanswered questions, and many more questions which we’ll only formulate as software updates start to roll out and as apps are launched. In all likelihood, we can expect national health authorities to announce adoption plans soon, hopefully paired with strict verification protocols to avoid the propagation of false-positives and false-negatives, and with particular care for more marginalized communities.</p>
+<p>If interested, you can find some technical notes from our analyses here:<br />
+<a href="https://github.com/amnestytech/covid19-apps">https://github.com/amnestytech/covid19-apps</a></p>
 
-<p>The efficacy of digital contact tracing depends on wide adoption, which is more likely in the more privileged segments of wealthy economies. This is why, even if effective, these technologies can only be complementary to equitable public health initiatives and international collaboration. Access to modern smartphones can not be a discriminatory factor for access to proper healthcare.</p>
+<p>And a Twitter thread highlighting some of the most interesting discoveries we made:<br />
+<a href="https://twitter.com/botherder/status/1272782015386050562">https://twitter.com/botherder/status/1272782015386050562</a></p>
 
     </div>
 
@@ -113,6 +115,11 @@
 
 <h1 id="previous">Older posts</h1>
 <table style="margin-top: 1em; margin-bottom: 1em;">
+
+<tr>
+    <td>Apr 14, 2020</td>
+    <td><span class="title-font" style="font-size: 22px;"><a class="post-link" href="/blog/2020/04/14/covid-19-digital-contact-tracing-is-upon-us.html">COVID-19 Digital Contact Tracing Is Upon Us</a></span><span class="post-tags" style="font-size: 16px; margin-left: 1em;"><a href="/newsletter/">newsletter</a></span></td>
+</tr>
 
 <tr>
     <td>Mar 12, 2020</td>
@@ -241,7 +248,7 @@
     <div class="container">
     <div id="footer">
     <div><a class="cc" style="text-decoration: none;" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i> <i class="fab fa-creative-commons-sa"></i> <i class="fab fa-creative-commons-nc"></i></a></div>
-    <div style="font-size: 16px;">Copyright &copy;2013-2020 <a href="https://nex.sx">Claudio <i>"nex"</i> Guarnieri</a>. The content of this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA 4.0)</a>.</div>
+    <div style="font-size: 16px;">Copyright &copy;2013-2020 <a href="https://nex.sx">Claudio <i>"nex"</i> Guarnieri</a>. The content of this website is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.</div>
 </div>
 
     </div>
