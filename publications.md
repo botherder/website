@@ -8,13 +8,14 @@ permalink: /publications/
 
 These are investigative and technical research reports I authored or co-authored:
 
+* [Moroccan Journalist Targeted With Network Injection Attacks Using NSO Group's Tools](https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/), *Amnesty International*, 22 June 2020
 * [Bahrain, Kuwait and Norway contact tracing apps among most dangerous for privacy](https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/), *Amnesty International*, 16 June 2020
 * [Qatar: Contact tracing app security flaw exposed sensitive personal details of more than one million](https://www.amnesty.org/en/latest/news/2020/05/qatar-covid19-contact-tracing-app-security-flaw/), *Amnesty International*, 26 May 2020
-* [Morocco: Human Rights Defenders Targeted with NSO Group’s Spyware](https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/), *Amnesty International*, 10 October 2019
+* [Morocco: Human Rights Defenders Targeted with NSO Group's Spyware](https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/), *Amnesty International*, 10 October 2019
 * [Evolving Phishing Attacks Targeting Journalists and Human Rights Defenders from the Middle-East and North Africa](https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/), *Amnesty International*, 21 August 2019
 * [Exodus: New Android Spyware Made in Italy](https://securitywithoutborders.org/blog/2019/03/29/exodus.html), *Security Without Borders*, 29 March 2019
 * [Phishing attacks using third-party applications against Egyptian civil society organizations](https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/), *Amnesty International*, 6 March 2019
-* [When Best Practice Isn’t Good Enough: Large Campaigns of Phishing Attacks in Middle East and North Africa Target Privacy-Conscious Users](https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/), *Amnesty International*, 19 Dec 2018
+* [When Best Practice Isn't Good Enough: Large Campaigns of Phishing Attacks in Middle East and North Africa Target Privacy-Conscious Users](https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/), *Amnesty International*, 19 Dec 2018
 * [Amnesty International Among Targets of NSO-Powered Campaign](https://www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/), *Amnesty International*, 1 August 2018
 * [Human Rights Under Surveillance - Digital Threats Against Human Rights Defenders in Pakistan](https://www.amnesty.org/en/documents/asa33/8366/2018/en/), *Amnesty International*, 15 May 2018
 * [Bahamut, Pursuing a Cyber Espionage Actor in the Middle East](https://www.bellingcat.com/news/mena/2017/06/12/bahamut-pursuing-cyber-espionage-actor-middle-east/), *Bellingcat*, 12 June 2017
@@ -53,7 +54,7 @@ These are investigative and technical research reports I authored or co-authored
 
 I occasionally write articles and opinion pieces. You can [contact me](/contacts/) if you would like me to write for you.
 
-* [Covid-19 e app di Contact Tracing: privacy, tecnologia e gestione dell’emergenza](https://www.amnesty.it/covid-19-e-app-di-contact-tracing-privacy-tecnologia-e-gestione-dellemergenza/) (Italian), *Amnesty International Italia*, 24 Apr 2020
+* [Covid-19 e app di Contact Tracing: privacy, tecnologia e gestione dell'emergenza](https://www.amnesty.it/covid-19-e-app-di-contact-tracing-privacy-tecnologia-e-gestione-dellemergenza/) (Italian), *Amnesty International Italia*, 24 Apr 2020
 * [Dissidents Have Been Abandoned and Besieged Online](https://motherboard.vice.com/en_us/article/bj5jvw/dissidents-abandoned-human-rights-iranian-surveillance-and-hacking), *Motherboard*, 13 Feb 2018
 * [Technology must foster, not hinder, free speech](http://www.dw.com/en/technology-must-foster-not-hinder-free-speech/a-39654972), *Deutsche Welle*, 13 Jul 2017
 * [Online Voting Is a Terrible Idea](https://motherboard.vice.com/en_us/article/online-voting-is-a-terrible-idea), *Motherboard*, 09 Jun 2017
