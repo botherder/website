@@ -10,7 +10,7 @@ You can now contact me securely using a [SecureDrop](https://www.securedrop.org)
 
 <div class="mono" style="border:2px solid black;padding: 1em;font-size: 20px;margin-top: 1em;margin-bottom: 1em;">http://aa7uvhztaheqskmmqwkv3isxlsvb326rozjum5yzxxx44vqj53jxq6ad.onion</div>
 
-Please note: you should remember that I am not a journalist and I do not work for a news organization. If you are looking for a reporter to contact, check [SecureDrop's Directory](https://securedrop.org/directory/). Sharing sensitive information can put you at risk, even when using Tor and SecureDrop. Please, always be careful and don't put yourself in harm's way.
+**Please note:** you should remember that I am not a journalist and I do not work for a news organization. If you are looking for a reporter to contact, check [SecureDrop's Directory](https://securedrop.org/directory/). Sharing sensitive information can put you at risk, even when using Tor and SecureDrop. Please, always be careful and don't put yourself in harm's way.
 
 ### End-to-end encrypted messaging
 
