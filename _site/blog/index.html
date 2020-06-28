@@ -65,36 +65,33 @@
 
     <header class="post-header">
         Latest entry:
-        <a href="/blog/2020/06/17/covid19-apps-new-forms-of-surveillance.html"><h1 class="post-title" itemprop="name headline">COVID-19 Apps and New Forms of Surveillance</h1></a>
-        <p class="post-meta"><time datetime="2020-06-17T00:00:00+02:00" itemprop="datePublished">Jun 17, 2020</time><span class="post-tags" style="margin-left: 1em;"><a href="/newsletter/">newsletter</a></span></p>
+        <a href="/blog/2020/06/28/moroccan-journalist-targeted-network-injection-nso-group.html"><h1 class="post-title" itemprop="name headline">Moroccan Journalist Targeted with Network Injection Attacks Using NSO Group's Tools</h1></a>
+        <p class="post-meta"><time datetime="2020-06-28T00:00:00+02:00" itemprop="datePublished">Jun 28, 2020</time><span class="post-tags" style="margin-left: 1em;"><a href="/newsletter/">newsletter</a></span></p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-        <p>Yesterday Amnesty International published the findings of a research project our Security Lab conducted over the last few weeks of COVID-19 contact tracing apps deployed in several countries between Europe and Middle-East and North Africa.</p>
+        <p>On June 22nd, Amnesty International published our Security Lab’s discovery of attacks against Omar Radi, a prominent journalist and human rights defender from Morocco. After conducting a forensic analysis of Omar’s iPhone, we found signs of targeted network injection attacks and infection with NSO Group’s Pegasus spyware.</p>
 
-<p><a href="https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/">https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/</a></p>
+<p><a href="https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/">https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/</a></p>
 
-<p>Among those we identified Kuwait’s Shlonik, Bahrain’s BeAware, and Norway’s Smittestopp among the most problematic. These three apps were singled out because of their ability to live stream GPS coordinates of users’ devices every few minutes. In the case of Kuwait and Norway, the apps also conduct Bluetooth proximity tracking and upload records of contacts between users.</p>
+<p>Omar is a courageous journalist who, because of this work, received harassment and intimidation. On December 26th 2019, Moroccan authorities arrested him because of a tweet he posted months before, criticizing the sentencing of protesters from the Hirak region of Morocco. He was released some days later, but eventually convicted to a 4 months suspended sentence.</p>
 
-<p>On Monday, after a back and forth with the Norwegian government, and after the national Data Protection Authority sent a letter requesting clarifications, Smittestopp was temporarily put on pause and all data collected thus far was deleted.</p>
+<p>Forensic traces we recovered from this phone reveal that Omar was targeted repeatedly from early 2019 at least until the end of January 2020. NSO Group’s Pegasus spyware was installed on his phone not through a malicious link sent via typical SMS, but through injection attacks over his mobile network.</p>
 
-<p>Data from Bahrain’s BeAware was also connected to a show on national television called “Are you at home?”, where randomly selected users of the app were called over the phone live on air and those found to be at home could win prize money.</p>
+<p>These attacks were coducted either with a rogue cell tower, which we know NSO Group sells as “Tactical Network Element”, or by leveraging access to the mobile operator used by Omar. In either case, the system monitored the phone’s Internet traffic and waited for any HTTP clear-text request in order to automatically inject a malicious redirect to an exploit server. In this way, attackers exploit vulnerabilities in the browser without often unconvincing social engineering messages.</p>
 
-<p>In May we already highlighted the case of Qatar’s EHTERAZ app which, besides being able to automatically collect Bluetooth “contacts” and optionally enable GPS tracking as well, we found to suffer a major privacy and security flaw in the generation of QR codes scanned by police patrols and checkpoints to ensure users are respecting quarantine measures. Our team discovered that anyone with the sufficient technical know-how would have been capable to extract the QR code for all EHTERAZ users, and obtain the names, designated confinement location, health status, and more, tied to Qatari national ID numbers. This issue was exacerbated by the consistent format of these ID numbers, which makes them trivial to enumerate and probe in bulk. While Qatari authorities immediately took action to minimize the exposure, and eventually rolled out an update to the app, privacy concerns remain.</p>
+<p><img src="https://aineupstrmediaprd.blob.core.windows.net/media/23858/mo2.png?width=374.88284910965325&amp;height=500" style="width: 400px;" /><br />
+<em>Photo Credit: Becky Peterson/Business Insider</em></p>
 
-<p>We found many flavors of contact tracing apps. While most follow a centralized architecture, some automatically upload data recorded by the apps, others only do so upon request of health authorities or voluntary symptom reporting by the users. Many, such as in the case of Kuwait, Bahrain, and Qatar, require national ID numbers upon registration, allowing authorities to directly connect records to specific individuals. Others, such as in the case of Norway, only require a valid phone number.</p>
+<p>For example, we found one successful infection occurred while Omar was using his Twitter app and clicked on a legitimate link from his timeline. We were amazed to find Omar in one occasion was so suspicious of these redirects that he managed to snap a screenshot of one undergoing.</p>
 
-<p>All in all, concerns over necessity and proportionality of the invasion of people’s right to privacy can be found across the board. While the efficacy of these measures is still highly debated, privacy-preserving models are already available and should be explored first. However, many governments rushed to roll out apps seemingly without proper considerations for human rights. Some were even not provided with any privacy policy at all.</p>
+<p><img src="/assets/blog/20200628/phone.png" style="width: 250px" /></p>
 
-<p>Amnesty is demanding governments to be transparent about their plans. COVID-19 contact tracing apps should remain voluntary, free from incentives and penalties. We are not only concerned about the potentially unnecessary invasive designs of some of these apps, but also of potential discriminatory practices that could stem from an inequitable access to healthcare if these apps become too central to government’s response to the pandemic.</p>
+<p>We have found network injections used before in Marocco along NSO Group’s spyware. In a <a href="https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/">previous report from October 2019</a>, we published similar findings on attacks against Maati Monjib, a well-known Moroccan human rights activist. Omar recalls one time a network injection occurred he was actually having lunch with Maati, and he pulled out his phone to find something he had read online pertaining to their conversation.</p>
 
-<p>Personally, I worry the introduction of some of these apps, particularly in certain regions, might lead to a normalization of excessive tracking that surely will have some lasting effects.</p>
+<p>While network injection isn’t a new technique, I believe we documented its first known use over 3G/4G, and implicated in the deployment of NSO Group’s Pegasus. SMS messages carrying malicious links were too recognizable and allowed to trivially identify targets just by digging around for known domains. Network injections are much more insidious to both recognize on the moment as well as identify later on.</p>
 
-<p>If interested, you can find some technical notes from our analyses here:<br />
-<a href="https://github.com/amnestytech/covid19-apps">https://github.com/amnestytech/covid19-apps</a></p>
-
-<p>And a Twitter thread highlighting some of the most interesting discoveries we made:<br />
-<a href="https://twitter.com/botherder/status/1272782015386050562">https://twitter.com/botherder/status/1272782015386050562</a></p>
+<p>Unfortunately, two days after our publication <a href="https://www.theguardian.com/world/2020/jun/24/moroccan-police-summon-journalist-days-after-israeli-spyware-allegations">Omar Radi was convoked by the National Brigade of Judicial Police (BNPJ)</a> and interrogated in connection <em>“ongoing investigation in regard to his being a suspect of obtaining funds from foreign sources related to intelligence groups”</em>. On Friday Omar released a statement you can read in French on <a href="https://twitter.com/OmarRADI/status/1276567435311747073">his Twitter account</a>. We are following the evolving situation and are calling for a stop to his harassment.</p>
 
     </div>
 
@@ -115,6 +112,11 @@
 
 <h1 id="previous">Older posts</h1>
 <table style="margin-top: 1em; margin-bottom: 1em;">
+
+<tr>
+    <td>Jun 17, 2020</td>
+    <td><span class="title-font" style="font-size: 22px;"><a class="post-link" href="/blog/2020/06/17/covid19-apps-new-forms-of-surveillance.html">COVID-19 Apps and New Forms of Surveillance</a></span><span class="post-tags" style="font-size: 16px; margin-left: 1em;"><a href="/newsletter/">newsletter</a></span></td>
+</tr>
 
 <tr>
     <td>Apr 14, 2020</td>

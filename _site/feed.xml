@@ -8,6 +8,36 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Moroccan Journalist Targeted with Network Injection Attacks Using NSO Group's Tools</title>
+            <description>&lt;p&gt;On June 22nd, Amnesty International published our Security Lab’s discovery of attacks against Omar Radi, a prominent journalist and human rights defender from Morocco. After conducting a forensic analysis of Omar’s iPhone, we found signs of targeted network injection attacks and infection with NSO Group’s Pegasus spyware.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/&quot;&gt;https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Omar is a courageous journalist who, because of this work, received harassment and intimidation. On December 26th 2019, Moroccan authorities arrested him because of a tweet he posted months before, criticizing the sentencing of protesters from the Hirak region of Morocco. He was released some days later, but eventually convicted to a 4 months suspended sentence.&lt;/p&gt;
+
+&lt;p&gt;Forensic traces we recovered from this phone reveal that Omar was targeted repeatedly from early 2019 at least until the end of January 2020. NSO Group’s Pegasus spyware was installed on his phone not through a malicious link sent via typical SMS, but through injection attacks over his mobile network.&lt;/p&gt;
+
+&lt;p&gt;These attacks were coducted either with a rogue cell tower, which we know NSO Group sells as “Tactical Network Element”, or by leveraging access to the mobile operator used by Omar. In either case, the system monitored the phone’s Internet traffic and waited for any HTTP clear-text request in order to automatically inject a malicious redirect to an exploit server. In this way, attackers exploit vulnerabilities in the browser without often unconvincing social engineering messages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://aineupstrmediaprd.blob.core.windows.net/media/23858/mo2.png?width=374.88284910965325&amp;amp;height=500&quot; style=&quot;width: 400px;&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Photo Credit: Becky Peterson/Business Insider&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, we found one successful infection occurred while Omar was using his Twitter app and clicked on a legitimate link from his timeline. We were amazed to find Omar in one occasion was so suspicious of these redirects that he managed to snap a screenshot of one undergoing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog/20200628/phone.png&quot; style=&quot;width: 250px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have found network injections used before in Marocco along NSO Group’s spyware. In a &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/10/Morocco-Human-Rights-Defenders-Targeted-with-NSO-Groups-Spyware/&quot;&gt;previous report from October 2019&lt;/a&gt;, we published similar findings on attacks against Maati Monjib, a well-known Moroccan human rights activist. Omar recalls one time a network injection occurred he was actually having lunch with Maati, and he pulled out his phone to find something he had read online pertaining to their conversation.&lt;/p&gt;
+
+&lt;p&gt;While network injection isn’t a new technique, I believe we documented its first known use over 3G/4G, and implicated in the deployment of NSO Group’s Pegasus. SMS messages carrying malicious links were too recognizable and allowed to trivially identify targets just by digging around for known domains. Network injections are much more insidious to both recognize on the moment as well as identify later on.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, two days after our publication &lt;a href=&quot;https://www.theguardian.com/world/2020/jun/24/moroccan-police-summon-journalist-days-after-israeli-spyware-allegations&quot;&gt;Omar Radi was convoked by the National Brigade of Judicial Police (BNPJ)&lt;/a&gt; and interrogated in connection &lt;em&gt;“ongoing investigation in regard to his being a suspect of obtaining funds from foreign sources related to intelligence groups”&lt;/em&gt;. On Friday Omar released a statement you can read in French on &lt;a href=&quot;https://twitter.com/OmarRADI/status/1276567435311747073&quot;&gt;his Twitter account&lt;/a&gt;. We are following the evolving situation and are calling for a stop to his harassment.&lt;/p&gt;
+</description>
+            <pubDate>Sun, 28 Jun 2020 00:00:00 +0200</pubDate>
+            <link>https://nex.sx//blog/2020/06/28/moroccan-journalist-targeted-network-injection-nso-group.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2020/06/28/moroccan-journalist-targeted-network-injection-nso-group.html</guid>
+        </item>
+        
+        <item>
             <title>COVID-19 Apps and New Forms of Surveillance</title>
             <description>&lt;p&gt;Yesterday Amnesty International published the findings of a research project our Security Lab conducted over the last few weeks of COVID-19 contact tracing apps deployed in several countries between Europe and Middle-East and North Africa.&lt;/p&gt;
 
@@ -407,37 +437,6 @@ STOPSMS: [exploit link]”&lt;/em&gt;&lt;/p&gt;
             <pubDate>Sun, 22 Sep 2019 00:00:00 +0200</pubDate>
             <link>https://nex.sx//blog/2019/09/22/what-am-i-doing-at-amnesty-international.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/09/22/what-am-i-doing-at-amnesty-international.html</guid>
-        </item>
-        
-        <item>
-            <title>Evolving Phishing Attacks Targeting Human Rights Defenders in Middle-East and North Africa</title>
-            <description>&lt;p&gt;As you might have noticed, I’ve recently gone quiet on social media, as well as on this newsletter.  Life and its challenges took the most of me in the last few months. And while stepping away from social media was a great quality-of-life improvement I recommend to everyone, I apologize for the lack of regular content here.&lt;/p&gt;
-
-&lt;p&gt;Many of my previous newsletters have dealt with phishing. This is representative to the current state of digital threats faced by Human Rights Defenders (HRDs). As infecting devices becomes harder, we’ve been observing attackers develop and evolve their tactics at both the “low-tier” as well as the “higher-tier” of attack sophistication. At Amnesty International we track these campaigns of attacks and we are in the process of publishing reports about some of our most recent findings. In the lower tier, phishing remains dominant and as service providers implement mitigations, and security educators promote them, attackers work around them.&lt;/p&gt;
-
-&lt;p&gt;Last December we disclosed a campaign of large-scale targeted phishing attacks capable of systematically bypassing traditional forms of Two-Factor Authentication&lt;sup id=&quot;a1&quot;&gt;&lt;a href=&quot;#f1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. In March we disclosed a separate campaign of targeted phishing attacks using malicious third-party OAuth applications&lt;sup id=&quot;a2&quot;&gt;&lt;a href=&quot;#f2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Two days ago we disclosed a renewed campaign, operated by the same attackers as the first, yet again with some evolved tactics:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&quot;&gt;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;OAuth Phishing&lt;sup id=&quot;a3&quot;&gt;&lt;a href=&quot;#f3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; seems to be an increasingly popular tactic, most likely because of its simplicity as well as because, by nature, it enables attackers to avoid worrying about Two-Factor Authentication. Normally OAuth Phishing is conducted by creating malicious third-party apps that, once authorized to a victim account (for example, a Google or Outlook account), would siphon off all emails and other data. Consequently platform providers have started heavily cracking down on malicious third-party apps, and introducing stricter verification and authorization procedures for third-party apps developers.&lt;/p&gt;
-
-&lt;p&gt;Most likely in response to this, in this latest campaign the attackers have developed a new OAuth Phishing variant technique we had not observed before. Instead of creating malicious third-party apps, they found a way to abuse legitimate Google third-party apps in order to phish for victims accounts. Truthfully, we were quite impressed with the attackers’ craft and ingenuity. I invite you to read the blog post for all the details (and pictures!).&lt;/p&gt;
-
-&lt;h2 id=&quot;some-additional-resources&quot;&gt;Some additional resources&lt;/h2&gt;
-
-&lt;p&gt;Over the last year I have been working on a set of tools to facilitate the identification and reporting of phishing and spearphishing attacks. Currently it is in a closed-beta phase, but if you are a journalist, HRD or part of an NGO, and you are interested in hearing more, please do get in contact with me.&lt;/p&gt;
-
-&lt;p&gt;Lastly, over the last months I have produced a (still under development) Guide to Phishing that is published by Security Without Borders here:
-https://guides.securitywithoutborders.org/guide-to-phishing/
-It goes in to details on how phishing attacks work and what are the available mitigations. I hope you will find it useful. Any contributions are welcome!&lt;/p&gt;
-
-&lt;p&gt;&lt;span id=&quot;f1&quot;&gt;&lt;/span&gt;1: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/&quot;&gt;When Best Practice Isn’t Good Enough: Large Campaigns of Phishing Attacks in Middle East and North Africa Target Privacy-Conscious Users&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f2&quot;&gt;&lt;/span&gt;2: &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;Phishing attacks using third-party applications against Egyptian civil society organizations&lt;/a&gt;&lt;br /&gt;
-&lt;span id=&quot;f3&quot;&gt;&lt;/span&gt;3: &lt;a href=&quot;https://guides.securitywithoutborders.org/guide-to-phishing/oauth-phishing.html&quot;&gt;Guide to Phishing - Security Without Borders&lt;/a&gt;&lt;/p&gt;
-</description>
-            <pubDate>Fri, 23 Aug 2019 00:00:00 +0200</pubDate>
-            <link>https://nex.sx//blog/2019/08/23/evolving-phishing-attacks-mena.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/08/23/evolving-phishing-attacks-mena.html</guid>
         </item>
         
     </channel>
