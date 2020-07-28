@@ -8,6 +8,45 @@
         <atom:link href="https://nex.sx/feed.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>The New Old Frontier of Interception</title>
+            <description>&lt;p&gt;States spend the big bucks on latest surveillance technology to have it easy. Emails and SMS messages carrying malicious attachments or links, for how crafty they might be, are not cutting it. Social engineering is unreliable, at times ineffective, and - damn it - its traces allow those pesky researchers to &lt;a href=&quot;https://securitywithoutborders.org/resources/targeted-surveillance-reports.html&quot;&gt;keep catching attacks&lt;/a&gt;!. As a matter of fact, I have lost count of the number of reports on NSO published thanks to malicious SMS messages trivially recovered from devices of journalists and activists. Certainly NSO’s customers took notice and getting busted did not stop them, but rather made them pull out more cash from their deep wallets. And surveillance vendors go ca-ching!&lt;/p&gt;
+
+&lt;p&gt;Sometimes, I can’t help but think that our exposures have likely helped these companies’ sales teams convince customers to spend more and upgrade their attack tools to stealthier and more insidious spyware delivery vectors. And while a &lt;a href=&quot;https://techcrunch.com/2019/10/29/whatsapp-spyware-nso-group/&quot;&gt;0day vulnerability in WhatsApp&lt;/a&gt; might be a rare opportunity, other techniques can be more commonly available.&lt;/p&gt;
+
+&lt;p&gt;On June 22nd &lt;a href=&quot;https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/&quot;&gt;we published a report&lt;/a&gt; on attacks against Omar Radi, a Moroccan journalist and human rights defender, using network injection attacks over his 4G mobile network. Those of you who follow this newsletter already know all about it. With a perfect timing, shortly thereafter &lt;a href=&quot;https://netzpolitik.org/2020/staatstrojaner-provider-sollen-internetverkehr-umleiten-damit-geheimdienste-hacken-koennen/&quot;&gt;Netzpolitik revealed&lt;/a&gt; the German secret service is attempting to pass a law to compel German mobile, Internet and service providers to facilitate similar network injection attacks in order to deliver spyware to targets in the country.&lt;/p&gt;
+
+&lt;p&gt;The principle is essentially the same: it’s much better to automatically force a device to open a bad link unbeknownst to its owner, than trick the owner into opening it manually. How? You wiretap the network of the target, and at the first opportunity of an unencrypted request to either a website or a binary download, you hijack the connection and respond with malicious content instead of the original. This technique has been widely known to the hacking community for many years, and was “professionalized” in the surveillance industry in the early 2010s, for example by the &lt;a href=&quot;https://citizenlab.ca/2014/08/cat-video-and-the-death-of-clear-text/&quot;&gt;German FinFisher with FinFly ISP, and the Italian Hacking Team with their Infection Proxy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In those years attacks primarily targeted computers, rather than phones, although some sweet leaked documents from 2010 already detail, for example, &lt;a href=&quot;https://sii.transparencytoolkit.org/docs/Dreamlab-Technologies_iProxy_Quotation_1sii_documents&quot;&gt;a country-wide deployment on mobile operators in Turkmenistan&lt;/a&gt;. Infecting computers through network injection only required the targets to receive an unencrypted iTunes update, or watch a YouTube video, or download anything from the Internet. Abracadabra, and without doing anything wrong, their devices would be infected.&lt;/p&gt;
+
+&lt;p&gt;HTTPS, which prevents - or at least complicates - network injection by encrypting the communication in transit, wasn’t really as widely popular then as it is today. As a matter of fact, YouTube accelerated its full deployment of HTTPS only after being confronted with FinFisher and Hacking Team’s network injection capabilities. Then, it really took Edward Snowden’s revelations to significantly push HTTPS’ adoption forward.&lt;/p&gt;
+
+&lt;p&gt;All that is to say network injection isn’t new at all, but we are clearly seeing a resurgence in its popularity. Is it the new old frontier of interception?&lt;/p&gt;
+
+&lt;p&gt;These attacks are much more insidious to prevent and especially discover. Typically, in our work, people contact us because of emails or messages they received and they suspect to be malicious. If done properly, network injections leave very little traces for a target to be suspicious of, and consequently it reduces our ability to discover abuses.&lt;/p&gt;
+
+&lt;p&gt;Besides this, network injections also raise numerous concerns from privacy and consumer rights perspectives. For example, Netzpolitik reports, German authorities under this latest law proposal could compel not only Internet Service Providers, but also mobile operators, German Internet exchanges and even hosting companies such as Hetzner, to become auxiliary to these attacks. The inherent trust relationship that exists between these companies and their customers could be seriously undermined. Of course authorities always had the ability to leverage these providers’ ability to monitor customers’ communications, but facilitating the compromise of their personal devices represents an escalation.&lt;/p&gt;
+
+&lt;p&gt;However, if authorities want to target mobile devices, the cooperation of network providers isn’t even necessary. The security trashfire that are mobile networks in fact allows attackers to use tactical network equipment, more commonly referred to as “IMSI catchers”. If attackers are able to get in physical proximity of the target smartphone, they can deploy a rather portable device that will mimick a cellular tower, force the phone to connect to it, and combine access to SS7 (or the more modern Diameter network) to obtain decryption keys in order to inspect Internet traffic over 3G/4G, hijack web requests and redirect the victims to exploitation sites.&lt;/p&gt;
+
+&lt;p&gt;To find examples of such devices for sale, look no further than &lt;a href=&quot;https://www.discoverytelecom.eu/catalog/5438.html&quot;&gt;some random&lt;/a&gt; surveillance shop’s &lt;a href=&quot;https://www.discoverytelecom.eu/catalog/5275.html&quot;&gt;website&lt;/a&gt;, and enjoy the native &lt;em&gt;“&lt;a href=&quot;https://www.pic-six.com/products/p6-fi5&quot;&gt;integration with trojan horse intrusion platforms&lt;/a&gt;“&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog/20200728/imsi1.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Source: Discovery Telecom&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And, if you still had doubts the Orwellian dystopian future is upon us, check out how surveillance companies are now even conveniently &lt;a href=&quot;https://www.uasvision.com/2017/11/27/eca-group-unveils-imsi-catcher-module-for-uav-it180/&quot;&gt;attaching IMSI catchers to flying drones&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog/20200728/imsi2.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Source: UAS Vision&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As it typically goes with network security, encryption goes a long way here too. If your Internet traffic is encrypted, attackers won’t be able to hijack it and network injections would likely fail. And while security researchers and engineers will keep playing Whac-a-Mole with the surveillance industry, you can start equipping your phone with a VPN, installing &lt;a href=&quot;https://www.eff.org/https-everywhere&quot;&gt;HTTPS Everywhere&lt;/a&gt; in your browser, and protect your websites with &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt;.&lt;/p&gt;
+</description>
+            <pubDate>Tue, 28 Jul 2020 00:00:00 +0200</pubDate>
+            <link>https://nex.sx//blog/2020/07/28/the-new-old-frontier-of-interception.html</link>
+            <guid isPermaLink="true">https://nex.sx//blog/2020/07/28/the-new-old-frontier-of-interception.html</guid>
+        </item>
+        
+        <item>
             <title>Moroccan Journalist Targeted with Network Injection Attacks Using NSO Group's Tools</title>
             <description>&lt;p&gt;On June 22nd, Amnesty International published our Security Lab’s discovery of attacks against Omar Radi, a prominent journalist and human rights defender from Morocco. After conducting a forensic analysis of Omar’s iPhone, we found signs of targeted network injection attacks and infection with NSO Group’s Pegasus spyware.&lt;/p&gt;
 
@@ -373,70 +412,6 @@ STOPSMS: [exploit link]”&lt;/em&gt;&lt;/p&gt;
             <pubDate>Thu, 10 Oct 2019 00:00:00 +0200</pubDate>
             <link>https://nex.sx//blog/2019/10/10/morocco-hrds-targeted-nso-group-spyware.html</link>
             <guid isPermaLink="true">https://nex.sx//blog/2019/10/10/morocco-hrds-targeted-nso-group-spyware.html</guid>
-        </item>
-        
-        <item>
-            <title>What am I doing at Amnesty International?</title>
-            <description>&lt;p&gt;Several years ago I joined Amnesty International as the very first technologist in a nearly new born Technology &amp;amp; Human Rights team. Today, our team has evolved into a dedicated program called Amnesty Tech, nearly 20 people strong, almost half of which are technologists.&lt;/p&gt;
-
-&lt;p&gt;Especially at the beginning, I would be frequently asked what a security researcher such as myself does at Amnesty International. Years later, I realized I never really explained that in details, and I never took the opportunity to tell what we collectively do now. Despite having thus far mostly operated out of the spotlights, I believe our work is remarkable and unique, so I figured I would use this newsletter to explain it.&lt;/p&gt;
-
-&lt;p&gt;At the moment, our program primarily splits between a team tackling emerging technologies (such as machine learning, facial recognition, as well as social media economics) and a team that instead focuses on digital security of Human Rights Defenders (HRDs). I will speak to the latter, as I primarily contribute to that.&lt;/p&gt;
-
-&lt;p&gt;This team consists of technologists currently based in Berlin, Tunis, Beirut, Dakar and Nairobi. Along with other researchers and advisors in our team, we try to tackle the growing threat of digital surveillance against HRDs through various means, primarily:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Investigate, Expose and Disrupt Illegitimate Surveillance&lt;/li&gt;
-  &lt;li&gt;Build Networks and Mentor Human Rights Defenders&lt;/li&gt;
-  &lt;li&gt;Create Tools and Services to Support Individuals at Risk&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Why Amnesty?&lt;/p&gt;
-
-&lt;p&gt;While a large human rights organization can be an heavy and slow machinery to work with, doing this work at Amnesty comes with some precious benefits. Firstly, we operate free from any governmental influences (oddly, an uncommon privilege). Secondly, we get to work outside of the schemes of “Digital Rights” or “Internet Freedom”, which I find by definition to be extremely insulating, and fundamentally Western. We work through the lense of “Human Rights”, in law and in principle, which is a lot more empowering, and speaks to a much wider audience. Lastly, and most importantly, we can count on many colleagues from all over the world who are connected and trusted by those communities we often find targeted with digital attacks. My colleagues’ such diverse set of skills, backgrounds, and locations, is a rare asset.&lt;/p&gt;
-
-&lt;p&gt;Now, let’s get into some more details.&lt;/p&gt;
-
-&lt;h2 id=&quot;investigate-expose-and-disrupt-illegitimate-surveillance&quot;&gt;Investigate, Expose and Disrupt Illegitimate Surveillance&lt;/h2&gt;
-
-&lt;p&gt;The Berlin office hosts our Security Lab, of which I’m the Head. It’s a small team that conducts most of our technical investigation on digital surveillance against civil society. Here, we work closely with our colleagues from the offices around the world in order to support them in cases of emergency, and together discover and investigate threats affecting their respective regions. The majority of our technologists are talented trainers, community organizers, and researchers from the Global South.&lt;/p&gt;
-
-&lt;p&gt;Having technologists familiar with the language, the culture, as well as the relevant threats in their regions is instrumental for us to identify global trends, as well as to collectively develop proper technology and security education material pertinent for the local HRDs at risk. Many of the tools and guides available today tend to be very Western-centric, and are not necessarily as applicable in other regions. As a truly global team, we learn from each other and invest more effectively our time and resources.&lt;/p&gt;
-
-&lt;p&gt;Sometimes we publish details on the campaigns of targeted attacks we come across, especially when we believe we can share useful insights and perhaps raise awareness of particular attacks that might not be commonly understood. (I included at the bottom of this newsletter a list of some of the research we published.) However, publishing is not our primary objective: we don’t want our research to be exclusively an opportunity for media attention, but to result in tangible benefit to the HRDs and NGOs we work with. Therefore, the knowledge we build on global digital threats against civil society directly feeds into other activities and projects.&lt;/p&gt;
-
-&lt;h2 id=&quot;build-networks-and-mentor-human-rights-defenders&quot;&gt;Build Networks and Mentor Human Rights Defenders&lt;/h2&gt;
-
-&lt;p&gt;In some of the places we operate, networks of technologists are still lacking. Building a resilient civil society requires connecting people, creating networks, and have communities talk to each other. As technologists working for a large Human Rights organisation like Amnesty, we are very uniquely well placed to facilitate these connections and foster their development. Some of my colleagues do incredible work on this aspect: my colleague Sadibou, for example, dedicates a lot of his time to the creation of a network of techies in West Africa (https://www.amnesty.org/en/latest/research/2019/04/amnesty-tech-secure-squad/).&lt;/p&gt;
-
-&lt;p&gt;Security trainings represented a common practice in civil society for a long time. However, because of logistical constraints, trainings often tend to be occasional, standardized, and hardly locally contextualized. We decided to take on a new approach, and &lt;em&gt;mentor&lt;/em&gt; rather than &lt;em&gt;train&lt;/em&gt;. Some of our technologists nurture long-term mentorships of individuals and organisations in their respective regions, and help them learn not just how to use this or that tool, but how to think and practice digital security. Our hope is to obtain a long lasting impact, rather than an immediate excitement that generally fades away quick.&lt;/p&gt;
-
-&lt;h2 id=&quot;create-tools-and-services-to-support-individuals-at-risk&quot;&gt;Create Tools and Services to Support Individuals at Risk&lt;/h2&gt;
-
-&lt;p&gt;Over the many years working in this space I observed (and personally contributed to) an almost exclusive attention to research &amp;amp; publishing, and very little to &lt;em&gt;building security&lt;/em&gt;. Although the media started paying attention to it, the difficult state of civil society’s digital security capacity barely improved.&lt;/p&gt;
-
-&lt;p&gt;I don’t intend to talk here about the technological ecosystem of this space, as it would require a much longer newsletter of its own (and if there is an interest, I’d be happy to write one - let me know!), but to boil it down to the core issue: Human Rights Defenders face threats similar to large corporates and governments, and at a much higher personal cost, but are only equipped with consumer-grade technology. There is a fundamental asymmetry that significantly disadvantages civil society, which tends to be relegated at the margins of conversations on cybersecurity.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, tackling this asymmetry is tricky because civil society is not a target market for the information security industry, and because of lacking financial resources. Additionally, the particular traits of typical civil society groups don’t lend well to appropriate security modeling. There is no provisioning of hardware, software or services, therefore the norm is BYO* (Bring Your Own Everything, as I call it), opening little possibilities for centralized control and monitoring. It is hard to detect attacks in these conditions, and so far we mostly managed through conversations rather than with technology.&lt;/p&gt;
-
-&lt;p&gt;For how inadequate this situation is, I believe it creates interesting opportunities for thinking about security differently, re-adapting concepts that might seem trivial in corporate space, but that could make a significant difference in civil society. We need to be creative and bold in re-inventing some wheels.&lt;/p&gt;
-
-&lt;p&gt;Here are some of the reports we have published so far:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/@AmnestyInsights/beyond-fake-news-an-investigation-into-the-murky-world-of-fake-campaigns-f4af8118844b&quot;&gt;Beyond fake news: an investigation into the murky world of fake campaigns&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/amnesty-insights/operation-kingphish-uncovering-a-campaign-of-cyber-attacks-against-civil-society-in-qatar-and-aa40c9e08852&quot;&gt;Operation Kingphish: Uncovering a Campaign of Cyber Attacks against Civil Society in Qatar and Nepal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2017/03/False-Friends-Spearphishing-of-Dissidents-in-Azerbaijan/&quot;&gt;False Friends: How Fake Accounts and Crude Malware Targeted Dissidents in Azerbaijan | Amnesty International&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/documents/asa33/8366/2018/en/&quot;&gt;Pakistan: Human rights under surveillance | Amnesty International&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/08/amnesty-international-among-targets-of-nso-powered-campaign/&quot;&gt;Amnesty International Among Targets of NSO-powered Campaign | Amnesty International&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/&quot;&gt;When Best Practice Isn’t Good Enough: Large Campaigns of Phishing Attacks in Middle East and North Africa Target Privacy-Conscious Users | Amnesty International&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/&quot;&gt;Phishing attacks using third-party applications against Egyptian civil society organizations | Amnesty International&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amnesty.org/en/latest/research/2019/08/evolving-phishing-attacks-targeting-journalists-and-human-rights-defenders-from-the-middle-east-and-north-africa/&quot;&gt;Evolving Phishing Attacks Targeting Journalists and Human Rights Defenders from the Middle-East and North Africa&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-            <pubDate>Sun, 22 Sep 2019 00:00:00 +0200</pubDate>
-            <link>https://nex.sx//blog/2019/09/22/what-am-i-doing-at-amnesty-international.html</link>
-            <guid isPermaLink="true">https://nex.sx//blog/2019/09/22/what-am-i-doing-at-amnesty-international.html</guid>
         </item>
         
     </channel>
