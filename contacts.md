@@ -28,4 +28,5 @@ My PGP key id is:
 My PGP fingerprint is:  
 <span class="mono">0521 6F3B 8684 8A30 3C2F  E37D D166 F166 7359 D880</span>
 
-You can find a copy of my public key [here](https://keybase.io/nex/pgp_keys.asc?fingerprint=05216f3b86848a303c2fe37dd166f1667359d880).
+You can find a copy of my public key [here](https://keybase.io/nex/pgp_keys.asc?fingerprint=05216f3b86848a303c2fe37dd166f1667359d880) or run:  
+<span class="mono">curl https://keybase.io/nex/pgp_keys.asc | gpg --import</span>
