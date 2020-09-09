@@ -236,7 +236,7 @@
 
 &lt;p&gt;You can download it using this Torrent magnet link:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;magnet:?xt=urn:btih:28f02613928c2666f7a8f70be4079c1084012cbb&amp;amp;dn=phishing.zip&amp;amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;magnet:?xt=urn:btih:28f02613928c2666f7a8f70be4079c1084012cbb&amp;amp;dn=phishing.zip&amp;amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;If you are a security trainer looking for a large collection of phishing screenshots to use in educational material, or if you are an academic studying phishing, or a security analyst looking to test your organization’s defenses, you might find this dataset useful. If you do, please let me know, as I am interested to learn of any derived insight or clever use.&lt;/p&gt;
 </description>
@@ -380,9 +380,9 @@ STOPSMS: [exploit link]”&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;network-injection-attacks&quot;&gt;Network Injection Attacks&lt;/h2&gt;
 
-&lt;p&gt;While analyzing Monjib’s phone, we noticed a few suspicious web visits in his Safari browsing history that originated from clear-text initial connections to, for example, &lt;code class=&quot;highlighter-rouge&quot;&gt;http://yahoo.fr&lt;/code&gt; and in less than 3ms redirected to URLs like this:&lt;/p&gt;
+&lt;p&gt;While analyzing Monjib’s phone, we noticed a few suspicious web visits in his Safari browsing history that originated from clear-text initial connections to, for example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://yahoo.fr&lt;/code&gt; and in less than 3ms redirected to URLs like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hxxps://bun54l2b67.get1tn0w.free247downloads[.]com:30495/szev4hz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hxxps://bun54l2b67.get1tn0w.free247downloads[.]com:30495/szev4hz&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;(Note: the URL is edited with hxxps:// and [.] to avoid accidental clicks.)&lt;/p&gt;
 
@@ -390,7 +390,7 @@ STOPSMS: [exploit link]”&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;What exactly happened?&lt;/p&gt;
 
-&lt;p&gt;If our theory is correct, Monjib tried to visit &lt;code class=&quot;highlighter-rouge&quot;&gt;yahoo.fr&lt;/code&gt; in order to access his mailbox from the phone, but his Internet connection was being monitored and automatically hijacked whenever he would visit an unencrypted web page (in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;http://yahoo.fr&lt;/code&gt;, but it could be any website without TLS) in order to inject a redirect and force Monjib’s Safari to visit an exploitation server. If successful, the exploitation server would leverage a vulnerability in Safari and ultimately install the spyware.&lt;/p&gt;
+&lt;p&gt;If our theory is correct, Monjib tried to visit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yahoo.fr&lt;/code&gt; in order to access his mailbox from the phone, but his Internet connection was being monitored and automatically hijacked whenever he would visit an unencrypted web page (in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://yahoo.fr&lt;/code&gt;, but it could be any website without TLS) in order to inject a redirect and force Monjib’s Safari to visit an exploitation server. If successful, the exploitation server would leverage a vulnerability in Safari and ultimately install the spyware.&lt;/p&gt;
 
 &lt;p&gt;The exploitation process would be the same as by sending malicious links via SMS, but through these automatic network redirects the attackers do not have to rely on successfully luring the victim into clicking on the links, but it happens programmatically.&lt;/p&gt;
 

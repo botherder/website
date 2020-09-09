@@ -97,9 +97,9 @@ STOPSMS: [exploit link]”</em></p>
 
 <h2 id="network-injection-attacks">Network Injection Attacks</h2>
 
-<p>While analyzing Monjib’s phone, we noticed a few suspicious web visits in his Safari browsing history that originated from clear-text initial connections to, for example, <code class="highlighter-rouge">http://yahoo.fr</code> and in less than 3ms redirected to URLs like this:</p>
+<p>While analyzing Monjib’s phone, we noticed a few suspicious web visits in his Safari browsing history that originated from clear-text initial connections to, for example, <code class="language-plaintext highlighter-rouge">http://yahoo.fr</code> and in less than 3ms redirected to URLs like this:</p>
 
-<p><code class="highlighter-rouge">hxxps://bun54l2b67.get1tn0w.free247downloads[.]com:30495/szev4hz</code></p>
+<p><code class="language-plaintext highlighter-rouge">hxxps://bun54l2b67.get1tn0w.free247downloads[.]com:30495/szev4hz</code></p>
 
 <p>(Note: the URL is edited with hxxps:// and [.] to avoid accidental clicks.)</p>
 
@@ -107,7 +107,7 @@ STOPSMS: [exploit link]”</em></p>
 
 <p>What exactly happened?</p>
 
-<p>If our theory is correct, Monjib tried to visit <code class="highlighter-rouge">yahoo.fr</code> in order to access his mailbox from the phone, but his Internet connection was being monitored and automatically hijacked whenever he would visit an unencrypted web page (in this case <code class="highlighter-rouge">http://yahoo.fr</code>, but it could be any website without TLS) in order to inject a redirect and force Monjib’s Safari to visit an exploitation server. If successful, the exploitation server would leverage a vulnerability in Safari and ultimately install the spyware.</p>
+<p>If our theory is correct, Monjib tried to visit <code class="language-plaintext highlighter-rouge">yahoo.fr</code> in order to access his mailbox from the phone, but his Internet connection was being monitored and automatically hijacked whenever he would visit an unencrypted web page (in this case <code class="language-plaintext highlighter-rouge">http://yahoo.fr</code>, but it could be any website without TLS) in order to inject a redirect and force Monjib’s Safari to visit an exploitation server. If successful, the exploitation server would leverage a vulnerability in Safari and ultimately install the spyware.</p>
 
 <p>The exploitation process would be the same as by sending malicious links via SMS, but through these automatic network redirects the attackers do not have to rely on successfully luring the victim into clicking on the links, but it happens programmatically.</p>
 
