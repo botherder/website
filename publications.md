@@ -8,6 +8,7 @@ permalink: /publications/
 
 These are investigative and technical research reports I authored or co-authored:
 
+* [German-made FinSpy spyware found in Egypt, and Mac and Linux versions revealed](https://www.amnesty.org/en/latest/research/2020/09/german-made-finspy-spyware-found-in-egypt-and-mac-and-linux-versions-revealed/), *Amnesty International*, 25 September 2020
 * [Moroccan Journalist Targeted With Network Injection Attacks Using NSO Group's Tools](https://www.amnesty.org/en/latest/research/2020/06/moroccan-journalist-targeted-with-network-injection-attacks-using-nso-groups-tools/), *Amnesty International*, 22 June 2020
 * [Bahrain, Kuwait and Norway contact tracing apps among most dangerous for privacy](https://www.amnesty.org/en/latest/news/2020/06/bahrain-kuwait-norway-contact-tracing-apps-danger-for-privacy/), *Amnesty International*, 16 June 2020
 * [Qatar: Contact tracing app security flaw exposed sensitive personal details of more than one million](https://www.amnesty.org/en/latest/news/2020/05/qatar-covid19-contact-tracing-app-security-flaw/), *Amnesty International*, 26 May 2020
