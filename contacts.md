@@ -27,6 +27,6 @@ I can also be contacted over [Wire](https://wire.com) or [Keybase](https://keyba
 
 You can now contact me securely using a [SecureDrop](https://www.securedrop.org) instance I run myself. **Please use this for sensitive matters only.** In order to access it, you will first need to download and install [Tor Browser](https://www.torproject.org/) or equip yourself with a [Tails](https://tails.boum.org) disk. You might also want to check out SecureDrop's official [detailed instructions](https://docs.securedrop.org/en/master/source.html) on users' safety. Once you are ready, you can go on and access my instance at the following Onion address:
 
-<div class="mono" style="border:2px solid black;padding: 1em;font-size: 20px;margin-top: 1em;margin-bottom: 1em;">http://aa7uvhztaheqskmmqwkv3isxlsvb326rozjum5yzxxx44vqj53jxq6ad.onion</div>
+<div class="mono" style="border:2px solid black;padding: 1em;font-size: 18px;margin-top: 1em;margin-bottom: 1em;">http://aa7uvhztaheqskmmqwkv3isxlsvb326rozjum5yzxxx44vqj53jxq6ad.onion</div>
 
 **Please note:** you should remember that I am not a journalist and I do not work for a news organization. If you are looking for a reporter to contact, check [SecureDrop's Directory](https://securedrop.org/directory/). Sharing sensitive information can put you at risk, even when using Tor and SecureDrop. Please, always be careful and don't put yourself in harm's way.
