@@ -21,7 +21,7 @@ I curate a personal newsletter where you can expect various reflections on cyber
 {% if post.newsletter %}
 <tr>
     <td>{{ post.date  | date: "%b %-d, %Y" }}</td>
-    <td><span class="title-font" style="font-size: 18px;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></td>
+    <td><span class="title-font" style="font-size: 19px;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></td>
 </tr>
 {% endif %}
 {% endfor %}
