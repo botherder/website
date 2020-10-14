@@ -6,7 +6,7 @@ permalink: /newsletter/
 
 I curate a personal newsletter where you can expect various reflections on cyber security, privacy and surveillance. You can also expect links I have found interesting, as well as books that I'm reading or updates on art projects I am working on.
 
-<div class="text-center" style="border:2px solid black;padding: 1em;font-size: 20px;margin-top: 2em;margin-bottom: 2em;">
+<div class="text-center" style="border:2px solid black;padding: 1em;font-size: 18px;margin-top: 2em;margin-bottom: 2em;">
     <b><a href="https://newsletter.nex.sx/subscription/B1UbVz2JQ"><i class="far fa-newspaper"></i> Subscribe to the Newsletter now!</a></b> Yes, you can also receive it PGP encrypted.
 </div>
 
@@ -21,7 +21,7 @@ I curate a personal newsletter where you can expect various reflections on cyber
 {% if post.newsletter %}
 <tr>
     <td>{{ post.date  | date: "%b %-d, %Y" }}</td>
-    <td><span class="title-font" style="font-size: 22px;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></td>
+    <td><span class="title-font" style="font-size: 18px;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span></td>
 </tr>
 {% endif %}
 {% endfor %}
