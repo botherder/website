@@ -16,4 +16,6 @@ permalink: /bio/
 >
 > He has been selected among the [50 persons of the year 2014](http://www.wired.it/attualita/tech/2014/12/29/50-persone-wired-2014/) by *Wired Italy*, he collected with the *Citizen Lab* the [EFF Pioneer Award](https://www.eff.org/awards/pioneer/2015) 2015, and he's been selected by *Forbes* among the [30 Under 30](http://www.forbes.com/30-under-30-2016/enterprise-tech/) honorees for 2016.
 >
+> As an avid free and open source software developer, Nex created projects including [Cuckoo Sandbox](https://www.cuckoosandbox.org), [Viper](https://github.com/viper-framework/viper), and [Hardentools](https://github.com/securitywithoutborders/hardentools). He also contributed to [RFC 8280](https://datatracker.ietf.org/doc/rfc8280/) Human Rights Protocol Considerations.
+>
 > Nex is also an artist, working with traditional media as well as with new and generative media art. Most of his work deals with privacy, surveillance, and the digitisation of modern society. Some of it has been exhibited and published in print in Berlin, London and Las Vegas.
