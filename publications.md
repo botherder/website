@@ -32,6 +32,7 @@ These are investigative and technical research reports I authored or co-authored
 * [Iran and the Soft War for Internet Dominance](https://archive.is/jnHxY), 4 August 2016
 * [Packrat: Seven Years of a South American Threat Actor](https://archive.is/7WVeq), *CitizenLab*, 8 December 2015
 * [Investigative Report on the Hack of the Left Party Infrastructure in Bundestag](https://archive.is/Dus7Q), *Netzpolitik*, 19 June 2015
+* [All We Know of NSA and Five-Eyes Malware](https://nex.sx/blog/2015/01/27/everything-we-know-of-nsa-and-five-eyes-malware.html), *Blog*, 27 Jan 2015
 * [The Digital Arms Race: NSA Preps America for Future Battle](https://archive.is/JqI5j), *Der Spiegel*, 17 Jan 2015
 * [Secret Malware in European Union Attack Linked To U.S. and British Intelligence](https://archive.is/ypjHY), *The Intercept*, 24 Nov 2014
 * [Police Story: Hacking Team's Government Surveillance Malware](https://archive.is/1kSp8), *CitizenLab*, 24 Jun 2014
@@ -62,6 +63,8 @@ I occasionally write articles and opinion pieces. You can [contact me](/contacts
 * [Manipulation of Public Opinion](https://medium.com/amnesty-insights/manipulation-of-public-opinion-b84c23ba3967), *Amnesty Insights*, 24 May 2017
 * [What Is To Be Hacked?](https://archive.fo/kabSL), *Limn Magazine*, 22 May 2017
 * [Interview with Hisham Almiraat — a story of Activism, Surveillance, and Freedom](https://medium.com/@botherder/interview-with-hisham-almiraat-a-story-of-activism-surveillance-and-freedom-a179fb01b8e9), *Medium*, 9 Dec 2016
+* [Letter on Investigatory Power Bills](https://nex.sx/blog/2015/11/27/letter-investigatory-powers-bill.html), 27 Nov 2015
+* [On Export Controls](https://nex.sx/blog/2015/02/15/on-export-controls.html), 15 Feb 2015
 * [India and #GoIBlocks: A Lesson for ISPs When Facing Censorship Orders](https://archive.is/c9Cyc), *Global Voices*, 14 Jan 2015
 * [What Protesters in Hong Kong (and Anywhere Else) Should Know About FireChat](https://archive.is/EPjjJ), *Slate*, 02 Oct 2014
 * [Deutsche Firmen verdienen Millionen mit &Uuml;berwachungstechnik](https://archive.is/oq03O), *Die Zeit*, 05 Sept 2014
